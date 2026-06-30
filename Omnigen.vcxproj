@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B12702AD-ABFB-343A-A199-8E24837244A3}</ProjectGuid>
+    <Keyword>QtVS_v301</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">
+    <QtMsBuild>$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)Binaries\$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>$(OPENSSL)\include;$(SolutionDir);$(SolutionDir)\Source;$(SolutionDir)\Source\Editor\OmniLog;$(FBX_SDK_PATH)\2019.5\include;$(TBB_PATH)\include;$(WindowsSDK_IncludePath);$(VC_IncludePath);$(QT_PATH)\include;$(PYTHON_LIB)\include;$(GTE_PATH);$(NVTT_PATH)\include;$(GLM_PATH);$(GLI_PATH)</IncludePath>
+    <IntDir>Binaries\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)Binaries\$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>$(GLI_PATH);$(GLM_PATH);$(NVTT_PATH)\include;$(OPENSSL)\include;$(SolutionDir);$(SolutionDir)\Source;$(SolutionDir)\Source\Editor\OmniLog;$(FBX_SDK_PATH)\2019.5\include;$(TBB_PATH)\include;$(WindowsSDK_IncludePath);$(VC_IncludePath);$(QT_PATH)\include;$(GTE_PATH)</IncludePath>
+    <IntDir>Binaries\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>Qt 5.14</QtInstall>
+    <QtModules>3dquick;core;gui;opengl;openglextensions;positioning;quick;quickwidgets;uitools;widgets</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>Qt 5.14</QtInstall>
+    <QtModules>3dquick;core;gui;opengl;openglextensions;positioning;quick;quickwidgets;uitools;widgets</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtMoc>
+      <PrependInclude>stdafx.h</PrependInclude>
+    </QtMoc>
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <PreprocessorDefinitions>FBXSDK_SHARED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <WarningLevel>Level1</WarningLevel>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;libfbxsdk.lib;D3DCompiler.lib;D3D11.lib;tbb_debug.lib;nvtt30106.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OPENSSL)\lib;$(TBB_PATH)\lib\intel64_win\vc_mt;$(FBX_SDK_PATH)\2019.5\lib\vs2017\x64\debug;$(PYTHON_LIB)\libs;$(NVTT_PATH)\lib\x64-v142;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y /d /f  "$(TBB_PATH)\..\redist\intel64_win\tbb\vc_mt\tbb_debug.dll" "$(OutDir)"
+xcopy /y /d /f  "$(OPENSSL)\*.dll" "$(OutDir)"
+xcopy /y /d /f  "$(NVTT_PATH)\*.dll" "$(OutDir)"
+xcopy /y /d /f  "$(FBX_SDK_PATH)\2019.5\lib\vs2017\x64\debug\*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtMoc>
+      <PrependInclude>stdafx.h</PrependInclude>
+    </QtMoc>
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;libfbxsdk-md.lib;D3DCompiler.lib;D3D11.lib;tbb.lib;libxml2-md.lib;nvtt30106.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(NVTT_PATH)\lib\x64-v142;$(TBB_PATH)\lib\intel64_win\vc_mt;$(FBX_SDK_PATH)\2019.5\lib\vs2017\x64\release;$(OPENSSL)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y /d /f  "$(TBB_PATH)\..\redist\intel64_win\tbb\vc_mt\tbb.dll" "$(OutDir)"
+xcopy /y /d /f  "$(OPENSSL)\*.dll" "$(OutDir)"
+xcopy /y /d /f  "$(NVTT_PATH)\*.dll" "$(OutDir)"
+xcopy /y /d /f  "$(FBX_SDK_PATH)\2019.5\lib\vs2017\x64\release\*.dll" "$(OutDir)"
+xcopy /y /d /f  "$(QT_PATH)\bin\Qt5Core.dll" "$(OutDir)"
+xcopy /y /d /f  "$(QT_PATH)\bin\Qt5Gui.dll" "$(OutDir)"
+xcopy /y /d /f  "$(QT_PATH)\bin\Qt5Location.dll" "$(OutDir)"
+xcopy /y /d /f  "$(QT_PATH)\bin\Qt5Network.dll" "$(OutDir)"
+xcopy /y /d /f  "$(QT_PATH)\bin\Qt5Positioning.dll" "$(OutDir)"
+xcopy /y /d /f  "$(QT_PATH)\bin\Qt5PositioningQuick.dll" "$(OutDir)"
+xcopy /y /d /f  "$(QT_PATH)\bin\Qt5Qml.dll" "$(OutDir)"
+xcopy /y /d /f  "$(QT_PATH)\bin\Qt5QmlModels.dll" "$(OutDir)"
+xcopy /y /d /f  "$(QT_PATH)\bin\Qt5QmlWorkerScript.dll" "$(OutDir)"
+xcopy /y /d /f  "$(QT_PATH)\bin\Qt5Quick.dll" "$(OutDir)"
+xcopy /y /d /f  "$(QT_PATH)\bin\Qt5QuickWidgets.dll" "$(OutDir)"
+xcopy /y /d /f  "$(QT_PATH)\bin\Qt5Widgets.dll" "$(OutDir)"
+xcopy /y /d /f  "$(QT_PATH)\bin\Qt53DCore.dll" "$(OutDir)"
+mkdir $(OutDir)platforms
+xcopy /y /d /f  "$(QT_PATH)\plugins\platforms\qwindows.dll" "$(OutDir)\platforms"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <QtRcc Include="Resources\Omnigen.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Map.qml" />
+    <None Include="Resources\Omnigen.qss" />
+    <None Include="Resources\Shaders\Terrain\TerrainMaterial.frag" />
+    <None Include="Resources\Shaders\Terrain\TerrainMaterial.vert" />
+    <None Include="Resources\Shaders\Urban\RoadMaterial.frag" />
+    <None Include="Resources\Shaders\Urban\RoadMaterial.vert" />
+    <None Include="Resources\Shaders\Urban\UrbanMesh.frag" />
+    <None Include="Resources\Shaders\Urban\UrbanMesh.vert" />
+    <None Include="Scripts\test.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources\Omnigen.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="Source\Editor\Dialogs\AssetCompiler\AssetCompilerDialog.ui" />
+    <QtUic Include="Source\Editor\Dialogs\Preferences\OmnigenPreferencesDialog.ui" />
+    <QtUic Include="Source\Editor\Framework\Style\FramelessWindow\FramelessDialog.ui" />
+    <QtUic Include="Source\Editor\Framework\Style\FramelessWindow\FramelessWindow.ui" />
+    <QtUic Include="Source\Editor\StageTools\Layout\OmniSatScan\OmniSatScan.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Data\Assets\Common\Texture.cpp" />
+    <ClCompile Include="Source\Data\Assets\RockMaterial\AssetRockMaterial.cpp" />
+    <ClCompile Include="Source\Data\Assets\SoilMaterial\AssetSoilMaterial.cpp" />
+    <ClCompile Include="Source\Editor\Dialogs\AssetCompiler\MultiAssetCompiler.cpp" />
+    <ClCompile Include="Source\Editor\Dialogs\CoverAssetRockPicker.cpp" />
+    <ClCompile Include="Source\Editor\Dialogs\StageProgressConfirmation.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\Common\DrawUtils.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\ContourLines\ContourLinesWidgets.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\ContourLines\IHSelection.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\ContourLines\Nodes\IsohypseNode.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\FeatureGeneration\StageToolsFeatureGeneration.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\FeaturePlacement\FeaturePlacementSelection.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\FeaturePlacement\FeaturePlacementWidgets.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\FeaturePlacement\Nodes\ClusterNode.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\FeaturePlacement\Nodes\MetaClusterNode.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\FeaturePlacement\StageToolsFeaturePlacement.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\Foliage\FoliageSelection.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\Landmasses\LandmassSelection.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\Landmasses\LandmassWidgets.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\Landmasses\Nodes\LandmassNode.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\Landmasses\Nodes\ShorelineNode.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\Layout\Nodes\BiomeDomainNode.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\Layout\Nodes\DomainSquareNode.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\Layout\Nodes\TerrainDomainNode.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\Layout\Nodes\WaterDomainNode.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\Lithomap\LithomapSelection.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\Lithomap\Nodes\CellNode.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\ModAssignment\Lake\ModToolsLake.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\ModAssignment\River\ModRiverWidget.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\ModAssignment\River\ModToolsRiver.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\Lithomap\LithomapToolsWidgets.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\Ridges\Nodes\RidgeNode.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\TerrainClassification\StageToolsTerrainClassification.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\TerrainClassification\TerrainClassificationWidgets.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\TerrainModel\Nodes\DEMPointNode.cpp" />
+    <ClCompile Include="Source\Scene\BoundingBox.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Common\Markers\BatchingCellMarker.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Common\Markers\BatchingLineMarker.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Common\Markers\MultiLineColoredMarker.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Common\Objects\Heightfield.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\ContourLines\IHSrcInfo.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\ContourLines\IsohypseBatchingMarker.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\ContourLines\IsohypseData.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\Beach\TerrainBlockBeach.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\Cliff\TerrainBlockCliff.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\Desert\DuneBarchan\DuneBarchan.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\Desert\DuneGraph.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\Desert\DuneLongitudinal\DuneLongitudinal.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\Desert\DuneNabkha\DuneNabkha.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\Desert\DuneSand\DuneSand.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\Desert\DuneStar\DuneStar.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\Desert\TerrainBlockDesert.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\Fault\TerrainBlockFault.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\Flatland\TerrainBlockFlatland.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\Precipice\TerrainBlockPrecipice.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\Ridge\TerrainBlockRidge.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\Seabed\TerrainBlockSeabed.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\Slope\TerrainBlockSlope.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\SmoothSlope\SmoothSlope.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\StageGeneration_FeatureGeneration.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\TerrainBlockBase.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\TerrainBlockData.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\TerrainBlockUtils.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\FeaturePlacement\StageGeneration_FeaturePlacement.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\Landmasses\LandmassMarker.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\Landmasses\SeamassMarker.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\Landmasses\ShorelineUtils.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\TerrainClassification\StageGeneration_TerrainClassification.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\TerrainMods\Desert\TerrainModSand.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\TerrainMods\Lake\LakeSurfaceMarker.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\TerrainMods\Lake\TerrainModLake.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanSites\Buildings\Building.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\TerrainMods\River\RiverMarker.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\TerrainMods\River\RiverNurbsMarker.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\TerrainMods\River\RiverSurfaceMarker.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\TerrainMods\River\TerrainModRiverData.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanSites\Buildings\BuildingGenerator.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanSites\RuralGen\RoadGenerator.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanSites\RuralGen\RoadTerrainSearch.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanSites\RuralGen\RuralRoadGenerator.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanSites\UrbanGen\Roads\RoadFixedTracer.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanSites\UrbanGen\Roads\RoadNetworkData.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanSites\UrbanGen\Roads\RoadVertexSearch.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanSites\UrbanGen\Roads\UrbanTopologyGenerator.cpp" />
+    <ClCompile Include="Source\Scene\ShaderPipeline.cpp" />
+    <ClCompile Include="Source\Utils\Colors.cpp" />
+    <ClCompile Include="Source\Utils\Geom3DUtils.cpp" />
+    <ClCompile Include="Source\Data\Assets\AssetBase.cpp" />
+    <ClCompile Include="Source\Data\Assets\Common\Mesh.cpp" />
+    <ClCompile Include="Source\Data\Assets\Common\MeshAtlas.cpp" />
+    <ClCompile Include="Source\Data\Assets\Plant\AssetPlant.cpp" />
+    <ClCompile Include="Source\Data\Assets\Structure\AssetStructure.cpp" />
+    <ClCompile Include="Source\Data\Assets\Texture\AssetTexture.cpp" />
+    <ClCompile Include="Source\Editor\Sections\CameraSystem\TestPlayer.cpp" />
+    <ClCompile Include="Source\Editor\Sections\Viewport\OmnigenViewportSection.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\Foliage\StageToolsFoliage.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\Layout\OmniSatScan\SatScanAnalysis.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\Layout\OmniSatScan\SatScanLandforms.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\TerrainFinalization\TerrainFinalizationSelection.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\UrbanLayout\UrbanLayoutWidgets.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\Foliage\PlantDrawable.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\Foliage\StageGeneration_Foliage.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\Ridges\MountainData.cpp" />
+    <ClCompile Include="Source\Editor\Dialogs\AssetCompiler\AssetCompilerDialog.cpp" />
+    <ClCompile Include="Source\Editor\Dialogs\Preferences\OmnigenPreferences.cpp" />
+    <ClCompile Include="Source\Editor\Dialogs\Preferences\OmnigenPreferencesDialog.cpp" />
+    <ClCompile Include="Source\Editor\Framework\AdvancedDockingSystem\API.cpp" />
+    <ClCompile Include="Source\Editor\Framework\AdvancedDockingSystem\ContainerWidget.cpp" />
+    <ClCompile Include="Source\Editor\Framework\AdvancedDockingSystem\DropOverlay.cpp" />
+    <ClCompile Include="Source\Editor\Framework\AdvancedDockingSystem\FloatingWidget.cpp" />
+    <ClCompile Include="Source\Editor\Framework\AdvancedDockingSystem\Internal.cpp" />
+    <ClCompile Include="Source\Editor\Framework\AdvancedDockingSystem\SectionContent.cpp" />
+    <ClCompile Include="Source\Editor\Framework\AdvancedDockingSystem\SectionContentWidget.cpp" />
+    <ClCompile Include="Source\Editor\Framework\AdvancedDockingSystem\SectionTitleWidget.cpp" />
+    <ClCompile Include="Source\Editor\Framework\AdvancedDockingSystem\SectionWidget.cpp" />
+    <ClCompile Include="Source\Editor\Framework\AdvancedDockingSystem\Serialization.cpp" />
+    <ClCompile Include="Source\Editor\Framework\Style\DarkStyle.cpp" />
+    <ClCompile Include="Source\Editor\Framework\Style\FramelessWindow\FramelessWindow.cpp" />
+    <ClCompile Include="Source\Editor\Framework\Style\FramelessWindow\FramelessWindowTitleBar.cpp" />
+    <ClCompile Include="Source\Editor\Framework\Style\OmniStyle.cpp" />
+    <ClCompile Include="Source\Editor\OmniStageBar\OmniStageBar.cpp" />
+    <ClCompile Include="Source\Editor\Sections\AssetMgr\AssetMgrSection.cpp" />
+    <ClCompile Include="Source\Editor\Sections\CameraSystem\OmnigenCameraSection.cpp" />
+    <ClCompile Include="Source\Editor\Sections\History\History.cpp" />
+    <ClCompile Include="Source\Editor\Sections\History\OmnigenHistoryStackSection.cpp" />
+    <ClCompile Include="Source\Editor\Sections\OmniLog\OmnigenLogView\OmnigenLogMessageItemModel.cpp" />
+    <ClCompile Include="Source\Editor\Sections\OmniLog\OmnigenLogView\OmnigenLogSection.cpp" />
+    <ClCompile Include="Source\Editor\Sections\OmniLog\OmniLogger.cpp" />
+    <ClCompile Include="Source\Editor\Sections\Outline\OmnigenOutlineSection.cpp" />
+    <ClCompile Include="Source\Editor\Sections\Outline\OutlineTree.cpp" />
+    <ClCompile Include="Source\Editor\Sections\Profiler\OmnigenProfiler.cpp" />
+    <ClCompile Include="Source\Editor\Sections\Profiler\OmnigenProfilerSection.cpp" />
+    <ClCompile Include="Source\Editor\Sections\PropertySystem\Fields\ComboBoxField.cpp" />
+    <ClCompile Include="Source\Editor\Sections\PropertySystem\Fields\OmnigenFieldBase.cpp" />
+    <ClCompile Include="Source\Editor\Sections\PropertySystem\OmnigenPropertiesSection.cpp" />
+    <ClCompile Include="Source\Editor\Sections\PropertySystem\OmnigenPropertyList.cpp" />
+    <ClCompile Include="Source\Editor\Sections\Viewport\OmnigenCameraManager.cpp" />
+    <ClCompile Include="Source\Editor\Sections\Viewport\OmnigenViewport.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\ContourLines\StageToolsContourLines.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\Landmasses\StageToolsLandmasses.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\Layout\LayoutSelection.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\Layout\LayoutWidgets.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\Layout\OmniSatScan\OmniSatScan.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\Layout\StageToolsLayout.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\Lithomap\StageToolsLithomap.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\ManipulationGizmoSelection.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\ModAssignment\StageToolsModAssignment.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\Ridges\RidgesSelection.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\Ridges\RidgesWidgets.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\Ridges\StageToolsRidges.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\SelectionMgrBase.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\StageToolsBase.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\TerrainFinalization\StageToolsTerrainFinalization.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\TerrainModel\StageToolsTerrainModel.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\TerrainModel\TerrainModelWidgets.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\UrbanLayout\StageToolsUrbanLayout.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\UrbanLayout\UrbanLayoutSelection.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\UrbanLayout\UrbanSelection.cpp" />
+    <ClCompile Include="Source\Editor\StageTools\UrbanSites\StageToolsUrbanSites.cpp" />
+    <ClCompile Include="Source\Scene\Core\EditorGridDrawable.cpp" />
+    <ClCompile Include="Source\Scene\Core\SkyboxDrawable.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Common\Markers\NurbsMarker.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Common\Objects\UrbanMeshDrawable.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\ContourLines\ContourLines.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\ContourLines\StageGeneration_ContourLines.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\Landmasses\StageGeneration_Landmasses.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\Landmasses\LandmassBoundMarker.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\Landmasses\ShorelineMarker.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\Layout\Data\Biome\DomainData_Biome.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\Layout\Data\DomainDataBase.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\Layout\Data\DomainFieldUtils.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\Layout\Data\Terrain\DomainData_Terrain.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\Layout\Data\Terrain\Landform.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\Layout\Data\Water\DomainData_Water.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\Layout\DomainDrawable.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\Layout\DomainHandleDrawable.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\Layout\DomainPaintingPreview.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\Layout\DomainSquareDrawable.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\Layout\StageGeneration_Layout.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\Lithomap\StageGeneration_Lithomap.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\Lithomap\LithoCluster.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\Ridges\RidgeMarker.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\Ridges\StageGeneration_Ridges.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\TerrainFinalization\StageGeneration_TerrainFinalization.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\TerrainFinalization\TerrainChunkDrawable.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\TerrainModel\DigitalElevationModel.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\TerrainModel\StageGeneration_TerrainModel.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\TerrainMods\StageGeneration_TerrainMods.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\TerrainMods\River\TerrainModRiver.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\TerrainMods\TerrainModBase.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanLayout\StageGeneration_UrbanLayout.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanLayout\UrbanHandleDrawable.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanLayout\UrbanPlanner.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanLayout\UrbanSuggestion.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanLayout\UrbanUtils.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanSites\UrbanGen\Core\District.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanSites\UrbanGen\Core\DistrictNetwork.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanSites\UrbanGen\Roads\RoadMarker.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanSites\StageGeneration_UrbanSites.cpp" />
+    <ClCompile Include="Source\Scene\HandleDrawable.cpp" />
+    <ClCompile Include="Source\CodeSandbox.cpp" />
+    <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\Omnigen.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Common\Markers\LineMarker.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Common\Markers\MarkerDrawable.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Common\Markers\PointCloudMarker.cpp" />
+    <ClCompile Include="Source\Scene\Generation\Common\Markers\PolygonMarker.cpp" />
+    <ClCompile Include="Source\Scene\Generation\OmnigenGeneration.cpp" />
+    <ClCompile Include="Source\Scene\Generation\OmnigenGenerationData.cpp" />
+    <ClCompile Include="Source\Scene\OmnigenDrawable.cpp" />
+    <ClCompile Include="Source\Utils\Clipper\clipper.cpp" />
+    <ClCompile Include="Source\Utils\CoreUtils.cpp" />
+    <ClCompile Include="Source\Utils\FbxHelpers.cpp" />
+    <ClCompile Include="Source\Utils\Interpolation.cpp" />
+    <ClCompile Include="Source\Utils\ManipulationGizmo.cpp" />
+    <ClCompile Include="Source\Utils\OmniBin\OmniBinQt.cpp" />
+    <ClCompile Include="Source\Utils\OmnigenDirectCompute.cpp" />
+    <ClCompile Include="Source\Utils\OmnigenProgressDialog.cpp" />
+    <ClCompile Include="Source\Utils\PlatformMisc.cpp" />
+    <ClCompile Include="Source\Utils\poly2tri\common\shapes.cc" />
+    <ClCompile Include="Source\Utils\poly2tri\sweep\advancing_front.cc" />
+    <ClCompile Include="Source\Utils\poly2tri\sweep\cdt.cc" />
+    <ClCompile Include="Source\Utils\poly2tri\sweep\sweep.cc" />
+    <ClCompile Include="Source\Utils\poly2tri\sweep\sweep_context.cc" />
+    <ClCompile Include="Source\Utils\Polygon.cpp" />
+    <ClCompile Include="Source\Utils\SquigCurve.cpp" />
+    <ClCompile Include="Source\Utils\TriangleAdjacencyUtils.cpp" />
+    <ClCompile Include="Source\Utils\Triangulation\delabella.cpp" />
+    <ClCompile Include="Source\Utils\Triangulation\Triangulation.cpp" />
+    <ClCompile Include="Source\Utils\Voronoi\Voronoi.cpp" />
+    <ClCompile Include="Source\Utils\Voronoi\VoronoiCore.cpp" />
+    <ClCompile Include="Source\Utils\Widgets\FlowLayout.cpp" />
+    <ClCompile Include="Source\Utils\Widgets\Spoiler.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanSites\UrbanGen\UrbanSite.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="Source\Editor\Dialogs\StageProgressConfirmation.h" />
+    <ClInclude Include="Source\Editor\Sections\PropertySystem\Fields\SliderField.h" />
+    <ClInclude Include="Source\Editor\StageTools\Common\DrawUtils.h" />
+    <ClInclude Include="Source\Editor\StageTools\ContourLines\ContourLinesWidgets.h" />
+    <ClInclude Include="Source\Editor\StageTools\ContourLines\IHSelection.h" />
+    <ClInclude Include="Source\Editor\StageTools\ContourLines\Nodes\IsohypseNode.h" />
+    <ClInclude Include="Source\Editor\StageTools\FeatureGeneration\StageToolsFeatureGeneration.h" />
+    <ClInclude Include="Source\Editor\StageTools\FeaturePlacement\ClusterBorderMarker.h" />
+    <ClInclude Include="Source\Editor\StageTools\FeaturePlacement\FeaturePlacementSelection.h" />
+    <ClInclude Include="Source\Editor\StageTools\FeaturePlacement\FeaturePlacementWidgets.h" />
+    <ClInclude Include="Source\Editor\StageTools\FeaturePlacement\Nodes\ClusterNode.h" />
+    <ClInclude Include="Source\Editor\StageTools\FeaturePlacement\Nodes\MetaClusterNode.h" />
+    <ClInclude Include="Source\Editor\StageTools\FeaturePlacement\StageToolsFeaturePlacement.h" />
+    <ClInclude Include="Source\Editor\StageTools\Foliage\FoliageSelection.h" />
+    <ClInclude Include="Source\Editor\StageTools\Landmasses\Nodes\LandmassNode.h" />
+    <ClInclude Include="Source\Editor\StageTools\Landmasses\Nodes\ShorelineNode.h" />
+    <ClInclude Include="Source\Editor\StageTools\Layout\Nodes\BiomeDomainNode.h" />
+    <ClInclude Include="Source\Editor\StageTools\Layout\Nodes\DomainSquareNode.h" />
+    <ClInclude Include="Source\Editor\StageTools\Layout\Nodes\TerrainDomainNode.h" />
+    <ClInclude Include="Source\Editor\StageTools\Layout\Nodes\WaterDomainNode.h" />
+    <ClInclude Include="Source\Editor\StageTools\Lithomap\LithomapSelection.h" />
+    <ClInclude Include="Source\Editor\StageTools\Lithomap\LithomapToolsWidgets.h" />
+    <ClInclude Include="Source\Editor\StageTools\Lithomap\Nodes\CellNode.h" />
+    <ClInclude Include="Source\Editor\StageTools\ModAssignment\Lake\ModToolsLake.h" />
+    <ClInclude Include="Source\Editor\StageTools\ModAssignment\ModTools.h" />
+    <QtMoc Include="Source\Editor\StageTools\ModAssignment\ModToolsBase.h" />
+    <ClInclude Include="Source\Editor\StageTools\ModAssignment\River\ModRiverWidget.h" />
+    <ClInclude Include="Source\Editor\StageTools\ModAssignment\River\ModToolsRiver.h" />
+    <ClInclude Include="Source\Editor\StageTools\Ridges\Nodes\RidgeNode.h" />
+    <ClInclude Include="Source\Editor\StageTools\StageObjectNode.h" />
+    <ClInclude Include="Source\Editor\StageTools\TerrainClassification\BlockTypeMarker.h" />
+    <ClInclude Include="Source\Editor\StageTools\TerrainClassification\StageToolsTerrainClassification.h" />
+    <ClInclude Include="Source\Editor\StageTools\TerrainClassification\TerrainClassificationWidgets.h" />
+    <ClInclude Include="Source\Editor\StageTools\TerrainModel\Nodes\DEMPointNode.h" />
+    <ClInclude Include="Source\Scene\BoundingBox.h" />
+    <ClInclude Include="Source\Scene\Generation\Common\Markers\BatchingCellMarker.h" />
+    <ClInclude Include="Source\Scene\Generation\Common\Markers\BatchingLineMarker.h" />
+    <ClInclude Include="Source\Scene\Generation\Common\Markers\BatchingMeshMarker.h" />
+    <ClInclude Include="Source\Scene\Generation\Common\Markers\BatchMarker.h" />
+    <ClInclude Include="Source\Scene\Generation\Common\Markers\LineMarkerData.h" />
+    <ClInclude Include="Source\Scene\Generation\Common\Markers\MultiLineColoredMarker.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\ContourLines\IHSrcInfo.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\ContourLines\IsohypseBatchingMarker.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\ContourLines\IsohypseData.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\Beach\TerrainBlockBeach.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\Cliff\TerrainBlockCliff.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\ClusterMeshMarker.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\Desert\DesertSubtypes.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\Desert\DuneBarchan\DuneBarchan.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\Desert\DuneGraph.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\Desert\DuneLongitudinal\DuneLongitudinal.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\Desert\DuneNabkha\DuneNabkha.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\Desert\DuneSand\DuneSand.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\Desert\DuneStar\DuneStar.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\Desert\TerrainBlockDesert.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\Fault\TerrainBlockFault.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\Flatland\TerrainBlockFlatland.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\Precipice\TerrainBlockPrecipice.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\Ridge\TerrainBlockRidge.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\Seabed\TerrainBlockSeabed.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\Slope\TerrainBlockSlope.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\SmoothSlope\SmoothSlope.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\StageGeneration_FeatureGeneration.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\TerrainBlock.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\TerrainBlockBase.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\TerrainBlockData.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\TerrainBlockUtils.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\FeaturePlacement\StageGeneration_FeaturePlacement.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\Lithomap\LithomapMarker.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainClassification\StageGeneration_TerrainClassification.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainMods\Desert\SandSurfaceMarker.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainMods\Desert\TerrainModSand.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanSites\UrbanGen\Roads\RoadFixedTracer.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanSites\UrbanGen\Roads\RoadNetworkData.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanSites\UrbanGen\Roads\RoadVertexSearch.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanSites\UrbanGen\Roads\UrbanTopologyGenerator.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanSites\UrbanGen\UrbanSite.h" />
+    <ClInclude Include="Source\Data\Assets\AssetBase.h" />
+    <QtMoc Include="Source\Editor\Dialogs\AssetCompiler\MultiAssetCompiler.h" />
+    <ClInclude Include="Source\Data\Assets\Common\Texture.h" />
+    <ClInclude Include="Source\Data\Assets\RockMaterial\AssetRockMaterial.h" />
+    <ClInclude Include="Source\Data\Assets\SoilMaterial\AssetSoilMaterial.h" />
+    <QtMoc Include="Source\Editor\Dialogs\CoverAssetRockPicker.h" />
+    <ClInclude Include="Source\Editor\Sections\PropertySystem\Fields\ArrayMetaField.h" />
+    <QtMoc Include="Source\Editor\Sections\PropertySystem\Fields\FieldImplBase.h" />
+    <ClInclude Include="Source\Editor\StageTools\Landmasses\LandmassSelection.h" />
+    <ClInclude Include="Source\Editor\StageTools\Landmasses\LandmassWidgets.h" />
+    <ClInclude Include="Source\Scene\Generation\Common\Objects\Heightfield.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\Landmasses\LandmassMarker.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\Landmasses\SeamassMarker.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\Landmasses\ShorelineUtils.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainMods\Lake\LakeSurfaceMarker.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainMods\Lake\TerrainModLake.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanSites\Buildings\Building.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainMods\River\RiverMarker.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainMods\River\RiverSurfaceMarker.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanSites\Buildings\BuildingGenerator.h" />
+    <ClInclude Include="Source\Scene\ShaderPipeline.h" />
+    <ClInclude Include="Source\Utils\AdjacencyGraph.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanSites\RuralGen\RoadGenerator.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanSites\RuralGen\RoadTerrainSearch.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanSites\RuralGen\RuralRoadGenerator.h" />
+    <ClInclude Include="Source\Utils\AStar.h" />
+    <ClInclude Include="Source\Utils\Colors.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainMods\River\RiverNurbsMarker.h" />
+    <ClInclude Include="Source\Utils\ConcaveHull.h" />
+    <ClInclude Include="Source\Utils\Geom3DUtils.h" />
+    <ClInclude Include="Source\Data\Assets\Assets.h" />
+    <ClInclude Include="Source\Data\Assets\Common\Mesh.h" />
+    <ClInclude Include="Source\Data\Assets\Common\MeshAtlas.h" />
+    <ClInclude Include="Source\Data\Assets\Common\MeshData.h" />
+    <ClInclude Include="Source\Data\Assets\Plant\AssetPlant.h" />
+    <ClInclude Include="Source\Data\Assets\Structure\AssetStructure.h" />
+    <ClInclude Include="Source\Data\Assets\Texture\AssetTexture.h" />
+    <ClInclude Include="Source\Editor\Sections\CameraSystem\TestPlayer.h" />
+    <ClInclude Include="Source\Editor\Sections\PropertySystem\Fields\RangeField.h" />
+    <ClInclude Include="Source\Editor\Sections\Viewport\OmnigenViewportSection.h" />
+    <ClInclude Include="Source\Editor\StageTools\Foliage\StageToolsFoliage.h" />
+    <ClInclude Include="Source\Editor\StageTools\Layout\OmniSatScan\SatScanAnalysis.h" />
+    <ClInclude Include="Source\Editor\StageTools\Layout\OmniSatScan\SatScanLandforms.h" />
+    <ClInclude Include="Source\Editor\StageTools\TerrainFinalization\TerrainFinalizationSelection.h" />
+    <ClInclude Include="Source\Editor\StageTools\UrbanLayout\UrbanHandleDrawable.h" />
+    <ClInclude Include="Source\Editor\StageTools\UrbanLayout\UrbanLayoutWidgets.h" />
+    <ClInclude Include="Source\Scene\Generation\Common\Markers\SharedMeshMarker.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\Foliage\PlantDrawable.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\Foliage\StageGeneration_Foliage.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\Ridges\MountainData.h" />
+    <ClInclude Include="Source\Editable.h" />
+    <QtMoc Include="Source\Editor\Dialogs\AssetCompiler\AssetCompilerDialog.h" />
+    <ClInclude Include="Source\Editor\Dialogs\Preferences\OmnigenPreferences.h" />
+    <ClInclude Include="Source\Editor\StageTools\TerrainModel\TerrainModelWidgets.h" />
+    <ClInclude Include="Source\Scene\Generation\Common\Markers\NurbsMarker.h" />
+    <ClInclude Include="Source\Scene\Generation\Common\Objects\UrbanMeshDrawable.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\Layout\DomainSquareDrawable.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainMods\River\TerrainModRiverData.h" />
+    <QtMoc Include="Source\Editor\Dialogs\Preferences\OmnigenPreferencesDialog.h" />
+    <ClInclude Include="Source\Editor\Framework\AdvancedDockingSystem\API.h" />
+    <QtMoc Include="Source\Editor\Framework\AdvancedDockingSystem\ContainerWidget.h" />
+    <QtMoc Include="Source\Editor\Framework\AdvancedDockingSystem\DropOverlay.h" />
+    <QtMoc Include="Source\Editor\Framework\AdvancedDockingSystem\FloatingWidget.h" />
+    <ClInclude Include="Source\Editor\Framework\AdvancedDockingSystem\Internal.h" />
+    <ClInclude Include="Source\Editor\Framework\AdvancedDockingSystem\SectionContent.h" />
+    <QtMoc Include="Source\Editor\Framework\AdvancedDockingSystem\SectionContentWidget.h" />
+    <QtMoc Include="Source\Editor\Framework\AdvancedDockingSystem\SectionTitleWidget.h" />
+    <QtMoc Include="Source\Editor\Framework\AdvancedDockingSystem\SectionWidget.h" />
+    <ClInclude Include="Source\Editor\Framework\AdvancedDockingSystem\Serialization.h" />
+    <QtMoc Include="Source\Editor\Framework\Style\DarkStyle.h" />
+    <QtMoc Include="Source\Editor\Framework\Style\FramelessWindow\FramelessWindow.h" />
+    <QtMoc Include="Source\Editor\Framework\Style\FramelessWindow\FramelessWindowTitleBar.h" />
+    <QtMoc Include="Source\Editor\Framework\Style\OmniStyle.h" />
+    <QtMoc Include="Source\Editor\Sections\AssetMgr\AssetMgrSection.h" />
+    <QtMoc Include="Source\Editor\OmniStageBar\OmniStageBar.h" />
+    <QtMoc Include="Source\Editor\Sections\CameraSystem\OmnigenCameraSection.h" />
+    <ClInclude Include="Source\Editor\Sections\History\History.h" />
+    <QtMoc Include="Source\Editor\Sections\History\OmnigenHistoryStackSection.h" />
+    <QtMoc Include="Source\Editor\Sections\OmniLog\OmnigenLogView\OmnigenLogMessageItemModel.h" />
+    <QtMoc Include="Source\Editor\Sections\OmniLog\OmnigenLogView\OmnigenLogSection.h" />
+    <ClInclude Include="Source\Editor\Sections\OmniLog\OmniLogger.h" />
+    <QtMoc Include="Source\Editor\Sections\Outline\OmnigenOutlineSection.h" />
+    <QtMoc Include="Source\Editor\Sections\Outline\OutlineTree.h" />
+    <ClInclude Include="Source\Editor\Sections\Profiler\OmnigenProfiler.h" />
+    <QtMoc Include="Source\Editor\Sections\Profiler\OmnigenProfilerSection.h" />
+    <QtMoc Include="Source\Editor\Sections\PropertySystem\OmnigenPropertiesSection.h" />
+    <ClInclude Include="Source\Editor\Sections\PropertySystem\Fields\ComboBoxField.h" />
+    <ClInclude Include="Source\Editor\Sections\PropertySystem\Fields\CheckboxField.h" />
+    <ClInclude Include="Source\Editor\Sections\PropertySystem\Fields\ConstField.h" />
+    <ClInclude Include="Source\Editor\Sections\PropertySystem\Fields\LineEditField.h" />
+    <ClInclude Include="Source\Editor\Sections\PropertySystem\Fields\OmnigenField.h" />
+    <QtMoc Include="Source\Editor\Sections\PropertySystem\Fields\OmnigenFieldBase.h" />
+    <ClInclude Include="Source\Editor\Sections\PropertySystem\Fields\TextureBrowserField.h" />
+    <ClInclude Include="Source\Editor\Sections\PropertySystem\OmnigenPropertyList.h" />
+    <QtMoc Include="Source\Editor\Sections\Viewport\OmnigenCameraManager.h" />
+    <QtMoc Include="Source\Editor\Sections\Viewport\OmnigenViewport.h" />
+    <ClInclude Include="Source\Editor\StageTools\ContourLines\StageToolsContourLines.h" />
+    <ClInclude Include="Source\Editor\StageTools\Landmasses\StageToolsLandmasses.h" />
+    <ClInclude Include="Source\Editor\StageTools\Layout\LayoutSelection.h" />
+    <ClInclude Include="Source\Editor\StageTools\Layout\LayoutWidgets.h" />
+    <QtMoc Include="Source\Editor\StageTools\Layout\OmniSatScan\OmniSatScan.h" />
+    <ClInclude Include="Source\Editor\StageTools\Layout\StageToolsLayout.h" />
+    <ClInclude Include="Source\Editor\StageTools\Lithomap\StageToolsLithomap.h" />
+    <ClInclude Include="Source\Editor\StageTools\ManipulationGizmoSelection.h" />
+    <ClInclude Include="Source\Editor\StageTools\ModAssignment\StageToolsModAssignment.h" />
+    <ClInclude Include="Source\Editor\StageTools\Ridges\RidgesSelection.h" />
+    <ClInclude Include="Source\Editor\StageTools\Ridges\RidgesWidgets.h" />
+    <ClInclude Include="Source\Editor\StageTools\Ridges\StageToolsRidges.h" />
+    <ClInclude Include="Source\Editor\StageTools\SelectionMgr.h" />
+    <QtMoc Include="Source\Editor\StageTools\SelectionMgrBase.h" />
+    <ClInclude Include="Source\Editor\StageTools\StageTools.h" />
+    <QtMoc Include="Source\Editor\StageTools\StageToolsBase.h" />
+    <ClInclude Include="Source\Editor\StageTools\TerrainFinalization\StageToolsTerrainFinalization.h" />
+    <ClInclude Include="Source\Editor\StageTools\TerrainModel\StageToolsTerrainModel.h" />
+    <ClInclude Include="Source\Editor\StageTools\UrbanLayout\StageToolsUrbanLayout.h" />
+    <ClInclude Include="Source\Editor\StageTools\UrbanLayout\UrbanLayoutSelection.h" />
+    <ClInclude Include="Source\Editor\StageTools\UrbanLayout\UrbanSelection.h" />
+    <ClInclude Include="Source\Editor\StageTools\UrbanSites\StageToolsUrbanSites.h" />
+    <ClInclude Include="Source\Scene\Core\EditorGridDrawable.h" />
+    <ClInclude Include="Source\Scene\Core\SkyboxDrawable.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\ContourLines\ContourLines.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\ContourLines\StageGeneration_ContourLines.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\Landmasses\StageGeneration_Landmasses.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\Landmasses\LandmassBoundMarker.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\Landmasses\ShorelineMarker.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\Layout\Data\Biome\DomainData_Biome.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\Layout\Data\DomainData.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\Layout\Data\DomainDataBase.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\Layout\Data\DomainFieldUtils.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\Layout\Data\Terrain\DomainData_Terrain.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\Layout\Data\Terrain\Landform.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\Layout\Data\Water\DomainData_Water.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\Layout\DomainDrawable.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\Layout\DomainHandleDrawable.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\Layout\DomainPaintingPreview.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\Layout\StageGeneration_Layout.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\Lithomap\StageGeneration_Lithomap.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\Lithomap\LithoCluster.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\Ridges\RidgeMarker.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\Ridges\StageGeneration_Ridges.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\StageGeneration.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\StageGenerationBase.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainFinalization\StageGeneration_TerrainFinalization.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainFinalization\TerrainChunkDrawable.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainModel\DigitalElevationModel.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainModel\StageGeneration_TerrainModel.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainMods\StageGeneration_TerrainMods.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainMods\River\TerrainModRiver.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainMods\TerrainMod.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainMods\TerrainModBase.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainMods\TerrainModData.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanLayout\StageGeneration_UrbanLayout.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanLayout\UrbanHandleDrawable.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanLayout\UrbanPlanner.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanLayout\UrbanSuggestion.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanLayout\UrbanUtils.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanSites\UrbanGen\Core\District.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanSites\UrbanGen\Core\DistrictNetwork.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanSites\UrbanGen\Roads\RoadMarker.h" />
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanSites\StageGeneration_UrbanSites.h" />
+    <ClInclude Include="Source\Scene\HandleDrawable.h" />
+    <ClInclude Include="Source\Constants.h" />
+    <ClInclude Include="Source\Scene\Generation\Common\Markers\LineMarker.h" />
+    <ClInclude Include="Source\Scene\Generation\Common\Markers\MarkerDrawable.h" />
+    <ClInclude Include="Source\Scene\Generation\Common\Markers\PointCloudMarker.h" />
+    <ClInclude Include="Source\Scene\Generation\Common\Markers\PolygonMarker.h" />
+    <ClInclude Include="Source\CodeSandbox.h" />
+    <ClInclude Include="Source\Scene\Generation\OmnigenGeneration.h" />
+    <QtMoc Include="Source\Scene\Generation\OmnigenGenerationData.h" />
+    <ClInclude Include="Source\Scene\Generation\OmnigenGenerationStage.h" />
+    <ClInclude Include="Source\Scene\OmnigenDrawable.h" />
+    <QtMoc Include="Source\Omnigen.h" />
+    <ClInclude Include="Source\Utils\CircularVectorView.h" />
+    <ClInclude Include="Source\Utils\Clipper\clipper.hpp" />
+    <ClInclude Include="Source\Utils\Crawler\dirent.h" />
+    <ClInclude Include="Source\Utils\Crawler\FileCrawler.h" />
+    <ClInclude Include="Source\Utils\EnumAsConstexpr.h" />
+    <ClInclude Include="Source\Utils\Event.h" />
+    <ClInclude Include="Source\Utils\FbxHelpers.h" />
+    <ClInclude Include="Source\Utils\GeometryData.h" />
+    <ClInclude Include="Source\Utils\Graph.h" />
+    <ClInclude Include="Source\Utils\Interpolation.h" />
+    <ClInclude Include="Source\Utils\ITree.h" />
+    <ClInclude Include="Source\Utils\CoreUtils.h" />
+    <ClInclude Include="Source\Utils\jwt\algorithm.hpp" />
+    <ClInclude Include="Source\Utils\jwt\assertions.hpp" />
+    <ClInclude Include="Source\Utils\jwt\base64.hpp" />
+    <ClInclude Include="Source\Utils\jwt\config.hpp" />
+    <ClInclude Include="Source\Utils\jwt\detail\meta.hpp" />
+    <ClInclude Include="Source\Utils\jwt\error_codes.hpp" />
+    <ClInclude Include="Source\Utils\jwt\exceptions.hpp" />
+    <ClInclude Include="Source\Utils\jwt\impl\algorithm.ipp" />
+    <ClInclude Include="Source\Utils\jwt\impl\error_codes.ipp" />
+    <ClInclude Include="Source\Utils\jwt\impl\jwt.ipp" />
+    <ClInclude Include="Source\Utils\jwt\impl\stack_alloc.ipp" />
+    <ClInclude Include="Source\Utils\jwt\json\json.hpp" />
+    <ClInclude Include="Source\Utils\jwt\jwt.hpp" />
+    <ClInclude Include="Source\Utils\jwt\parameters.hpp" />
+    <ClInclude Include="Source\Utils\jwt\short_string.hpp" />
+    <ClInclude Include="Source\Utils\jwt\stack_alloc.hpp" />
+    <ClInclude Include="Source\Utils\jwt\string_view.hpp" />
+    <ClInclude Include="Source\Utils\magic_enum.hpp" />
+    <ClInclude Include="Source\Utils\ManipulationGizmo.h" />
+    <ClInclude Include="Source\Utils\MarkerRecorder.h" />
+    <ClInclude Include="Source\Utils\OmniBin\OmniBinQt.h" />
+    <ClInclude Include="Source\Utils\Poisson.h" />
+    <ClInclude Include="Source\Utils\Resumable.h" />
+    <ClInclude Include="Source\Utils\SerializableNurbs.h" />
+    <ClInclude Include="Source\Utils\OmniBin\OmniBin.h" />
+    <ClInclude Include="Source\Utils\OmnigenDirectCompute.h" />
+    <QtMoc Include="Source\Utils\OmnigenProgressDialog.h" />
+    <ClInclude Include="Source\Utils\PlatformMisc.h" />
+    <ClInclude Include="Source\Utils\poly2tri\common\shapes.h" />
+    <ClInclude Include="Source\Utils\poly2tri\common\utils.h" />
+    <ClInclude Include="Source\Utils\poly2tri\poly2tri.h" />
+    <ClInclude Include="Source\Utils\poly2tri\sweep\advancing_front.h" />
+    <ClInclude Include="Source\Utils\poly2tri\sweep\cdt.h" />
+    <ClInclude Include="Source\Utils\poly2tri\sweep\sweep.h" />
+    <ClInclude Include="Source\Utils\poly2tri\sweep\sweep_context.h" />
+    <ClInclude Include="Source\Utils\Polygon.h" />
+    <ClInclude Include="Source\Utils\QuadTree.h" />
+    <ClInclude Include="Source\Utils\QuadTreeLite.h" />
+    <ClInclude Include="Source\Utils\SquigCurve.h" />
+    <ClInclude Include="Source\Utils\TriangleAdjacencyUtils.h" />
+    <ClInclude Include="Source\Utils\Triangulation\delabella.h" />
+    <ClInclude Include="Source\Utils\Triangulation\Earcut.hpp" />
+    <ClInclude Include="Source\Utils\Triangulation\Triangulation.h" />
+    <ClInclude Include="Source\Utils\Voronoi\jc_voronoi.h" />
+    <ClInclude Include="Source\Utils\Voronoi\jc_voronoi_clip.h" />
+    <ClInclude Include="Source\Utils\Voronoi\Voronoi.h" />
+    <ClInclude Include="Source\Utils\Voronoi\VoronoiCore.h" />
+    <QtMoc Include="Source\Utils\Widgets\Spoiler.h" />
+    <ClInclude Include="Source\Utils\Widgets\FlowLayout.h" />
+    <QtMoc Include="Source\Utils\Widgets\RangeSlider.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shaders\Compute\SquareIntArray.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shaders\Compute\BaysRecognition.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shaders\Compute\ClusterSmoothing.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

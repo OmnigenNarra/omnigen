@@ -1,0 +1,2092 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files\Editor">
+      <UniqueIdentifier>{33b51729-6be8-4c99-a8ee-c78a149672cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene">
+      <UniqueIdentifier>{522d6be2-7f9d-46ac-8959-39ca9270c02b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation">
+      <UniqueIdentifier>{ab87b6ab-3563-4b21-b2be-14ec02ae57ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shaders">
+      <UniqueIdentifier>{6e166369-cd20-4783-b632-8509bf4cb763}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shaders\Compute">
+      <UniqueIdentifier>{2edb349f-7101-4a06-b2cc-1f3ff1cb0ff0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Common">
+      <UniqueIdentifier>{4c055917-43f5-4e17-830e-9ce37c6b3d36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Common\Markers">
+      <UniqueIdentifier>{bab9aae6-ab93-47fa-a6bb-1b610df6df7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils">
+      <UniqueIdentifier>{40979cc9-98e5-46e8-b30a-b1b7531dc7fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils\Clipper">
+      <UniqueIdentifier>{5699c8c8-acce-44de-9938-913f0595794e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils\Triangulation">
+      <UniqueIdentifier>{76f3edd1-e792-4be8-8e87-c58267eb43dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils\Voronoi">
+      <UniqueIdentifier>{3c5f0980-e6bc-4a7e-9b33-436d47d4c6d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils\Widgets">
+      <UniqueIdentifier>{bfa21bd0-5c67-4228-b9d6-36659f6734d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils\Crawler">
+      <UniqueIdentifier>{54530850-623f-444a-969f-06de3c2039c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shaders\Terrain">
+      <UniqueIdentifier>{7280e69b-4cb4-464d-9597-a26b16723531}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\Sections">
+      <UniqueIdentifier>{17ee2d8d-6796-4056-bd7e-770793b540c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\Sections\History">
+      <UniqueIdentifier>{1eac4f2b-9e1a-43ee-9d0d-f94060c0019f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\Sections\CameraSystem">
+      <UniqueIdentifier>{82b93bf7-9713-4b37-a32f-20e27263e1ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\Sections\AssetMgr">
+      <UniqueIdentifier>{52c2b9f6-ffac-470b-9677-cc22dcd37238}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\Sections\OmniLog">
+      <UniqueIdentifier>{eb13dbe6-a0b3-4f41-b53e-2cabda1124c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\Sections\OmniLog\OmnigenLogView">
+      <UniqueIdentifier>{11388f6e-1025-43de-8d23-466ecc423479}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\Sections\Outline">
+      <UniqueIdentifier>{dd789e65-264c-4b64-b00c-09a8a8e5265b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\Sections\Profiler">
+      <UniqueIdentifier>{bc9d39ab-0eb3-42e4-bf21-c9375b428749}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\Sections\PropertySystem">
+      <UniqueIdentifier>{2ccd3ef3-5b9c-4b16-9310-3e413b2b44ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\Sections\PropertySystem\Fields">
+      <UniqueIdentifier>{8febe919-0573-49e6-b867-2f19ab0696d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\Framework">
+      <UniqueIdentifier>{08b19a3e-6005-4aee-8da0-fe8eb4c3c37a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\Framework\AdvancedDockingSystem">
+      <UniqueIdentifier>{533572c9-9106-452a-b922-bf633b19783e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\Framework\Style">
+      <UniqueIdentifier>{95309b73-d094-464a-95dc-a2fd2dda0469}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\Framework\Style\FramelessWindow">
+      <UniqueIdentifier>{3762047a-a8d7-4a50-9361-9c1475cdb508}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils\OmniBin">
+      <UniqueIdentifier>{b9ed94b4-411e-4daa-8b4e-87356298ae8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\Sections\Viewport">
+      <UniqueIdentifier>{64de5bf0-35b9-4532-ab3e-d40e19975f5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\StageTools">
+      <UniqueIdentifier>{c60482a4-0788-4a37-9125-df7d4701f134}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\StageTools\ContourLines">
+      <UniqueIdentifier>{e1f95a14-9523-4c28-a7b9-8881148ef4c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\StageTools\Landmasses">
+      <UniqueIdentifier>{2f9b7002-922f-4e0d-8853-5eaaddd798ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\StageTools\Layout">
+      <UniqueIdentifier>{84bb6515-9df2-4bf3-b749-bb08b6d92fba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\StageTools\Lithomap">
+      <UniqueIdentifier>{8df2e87f-4073-4f90-ba9a-d8774e978a4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\StageTools\ModAssignment">
+      <UniqueIdentifier>{cf8d80a6-6202-473e-93cb-833429209a80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\StageTools\Ridges">
+      <UniqueIdentifier>{5d60791a-8804-4976-ab81-d6c431dcd694}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\StageTools\TerrainFinalization">
+      <UniqueIdentifier>{75a201ae-8c29-4a48-bf73-59b5f2cc9365}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\StageTools\TerrainModel">
+      <UniqueIdentifier>{d1f042d4-2da6-4960-b242-bb203613bd23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\StageTools\UrbanLayout">
+      <UniqueIdentifier>{2b071644-46bc-4217-a5c5-24900d0a047e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\StageTools\UrbanSites">
+      <UniqueIdentifier>{ba74e40c-2ad4-4d42-84b9-2e5b3f316d33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\StageTools\Layout\OmniSatScan">
+      <UniqueIdentifier>{d1cd47e3-3edc-471e-9fc0-2a48d1b17b20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Core">
+      <UniqueIdentifier>{d6f122a7-8380-4b60-b348-701fb2d69102}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages">
+      <UniqueIdentifier>{53fdb9bb-4a95-493e-9fcc-404e80980e9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\Layout">
+      <UniqueIdentifier>{d4747dd7-9eef-4a26-90cf-c2e17322b1f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\Landmasses">
+      <UniqueIdentifier>{7c52a83f-805f-465c-b791-b22f3db88521}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\Ridges">
+      <UniqueIdentifier>{b4900c7d-0f2d-4fa6-9701-a932e11ba9e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\ContourLines">
+      <UniqueIdentifier>{501190dc-142d-4931-a57b-c8c2c96c0255}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\TerrainModel">
+      <UniqueIdentifier>{70dcff49-4df5-47fe-81ce-69d2358571d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\Lithomap">
+      <UniqueIdentifier>{0c995ed3-ba97-4553-a6c5-09f065c8aff4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\TerrainMods">
+      <UniqueIdentifier>{e6f3ca81-b53c-4616-8442-602111efa2e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\UrbanLayout">
+      <UniqueIdentifier>{76b4bee1-1b48-4022-8107-c12b819fb0dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\UrbanSites">
+      <UniqueIdentifier>{33c76b50-f4f1-457f-8445-e7117fb9251f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\TerrainFinalization">
+      <UniqueIdentifier>{ad850d97-f304-40e2-8036-20ef46b2c88c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\TerrainMods\River">
+      <UniqueIdentifier>{9b686389-e033-490d-83c5-8e2e55aefffa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\Layout\Data">
+      <UniqueIdentifier>{c6bb46eb-ad68-468c-ac9c-a8c09e8ca121}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\Layout\Data\Terrain">
+      <UniqueIdentifier>{442ecf60-23f1-46f7-9f60-2e1e8a276bd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\Layout\Data\Biome">
+      <UniqueIdentifier>{96bfca66-5c9a-4cbd-bfb4-eaf3dff4652e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\Layout\Data\Water">
+      <UniqueIdentifier>{3286a40e-82e4-4c9c-a800-016b6e544c92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\Dialogs">
+      <UniqueIdentifier>{ff9ea04b-85b7-4597-a94c-b37290574586}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\Dialogs\Preferences">
+      <UniqueIdentifier>{e546b294-5024-4470-a0ca-2b63b93c7ddb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\OmniStageBar">
+      <UniqueIdentifier>{7824072d-0cb6-4f15-9425-55f6ec81419d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\Dialogs\AssetCompiler">
+      <UniqueIdentifier>{d57d4e58-64f8-483d-b0a1-6f1c5d59c706}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shaders\Urban">
+      <UniqueIdentifier>{f27fe26d-535c-40a9-961f-4f758257152c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Common\Objects">
+      <UniqueIdentifier>{182dd94a-8456-4b55-a2c7-8dcb648ab5be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts">
+      <UniqueIdentifier>{794c4724-f788-4a33-b93f-5ecf2d27df41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\Foliage">
+      <UniqueIdentifier>{55736866-3c81-49e9-ae35-f52fc7b29902}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\StageTools\Foliage">
+      <UniqueIdentifier>{5d4b19ee-84ac-4956-9371-6a54e9d5b71a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data">
+      <UniqueIdentifier>{5d63be74-7b7e-42e9-8122-61bc2ebaa2f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data\Assets">
+      <UniqueIdentifier>{3e32e5e0-7c76-417c-9a2a-6675d0e11343}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data\Assets\Texture">
+      <UniqueIdentifier>{6a3997ec-fd65-49c1-9256-d634ea03555e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data\Assets\Common">
+      <UniqueIdentifier>{7b75d70b-fa61-4e12-8f60-c3a5d08b221a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data\Assets\Plant">
+      <UniqueIdentifier>{76cff8a8-1629-4fed-aa73-988873b06f43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data\Assets\Structure">
+      <UniqueIdentifier>{05588a67-cba7-427e-b413-3d7afd6c72f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils\poly2tri">
+      <UniqueIdentifier>{2c84d57c-8779-4212-9fa4-f2282a320674}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\UrbanSites\Buildings">
+      <UniqueIdentifier>{0bdc3125-9534-4daf-a3e6-a589000871bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data\Assets\RockMaterial">
+      <UniqueIdentifier>{d1cbfeda-183f-48be-98c2-94cbb11d8d1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data\Assets\SoilMaterial">
+      <UniqueIdentifier>{d0d1a7f2-1fdd-4fd7-9bea-afdd07ef9aff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\TerrainMods\Lake">
+      <UniqueIdentifier>{98b015f0-09eb-4493-9234-1ed9a6448dc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\UrbanSites\RuralGen">
+      <UniqueIdentifier>{63df4e33-1b50-403a-8860-b09d58e979a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\UrbanSites\UrbanGen">
+      <UniqueIdentifier>{16e8d0c9-1ff6-41c9-a80a-781e42a9e6d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\UrbanSites\UrbanGen\Core">
+      <UniqueIdentifier>{d411d946-df32-485a-8639-c303d4df9255}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\UrbanSites\UrbanGen\Roads">
+      <UniqueIdentifier>{997808d6-024b-4427-afc8-423b75af52c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\TerrainMods\Sand">
+      <UniqueIdentifier>{77feb391-128f-44fa-aa74-bcd5e7f8181e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\StageTools\ModAssignment\River">
+      <UniqueIdentifier>{50f1f9b9-9a28-485f-ab83-b140d16eadf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\StageTools\ModAssignment\Lake">
+      <UniqueIdentifier>{5a06f398-29f2-4d36-9540-7a376ae1ebab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\StageTools\Common">
+      <UniqueIdentifier>{c27b92e9-0502-468d-a8c1-014dfa1e3a7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils\jwt">
+      <UniqueIdentifier>{1e01085a-fbee-4e42-b3b0-3b7cd54d42ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils\jwt\detail">
+      <UniqueIdentifier>{3239e0e4-a1fd-48f8-8a9b-62ef78d7fddb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils\jwt\impl">
+      <UniqueIdentifier>{19ebc28c-03c5-444a-99da-cf73ecd7e4d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils\jwt\json">
+      <UniqueIdentifier>{95b3afb4-88e3-4b74-adb2-7a97657cde74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\TerrainClassification">
+      <UniqueIdentifier>{056e7f30-6b59-4b50-9d32-90b55d3dffa6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\FeaturePlacement">
+      <UniqueIdentifier>{460a3a12-8728-4f87-b25d-2d09cefdd49f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\FeatureGeneration">
+      <UniqueIdentifier>{4c181d3d-2aa3-4283-9f0a-bc67b23bfc69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\FeatureGeneration\SmoothSlope">
+      <UniqueIdentifier>{e0a7717f-c580-48d6-a510-083922d98f89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\FeatureGeneration\Beach">
+      <UniqueIdentifier>{66ed81f1-63a4-4125-a66f-13b50094dcf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\FeatureGeneration\Cliff">
+      <UniqueIdentifier>{65ac2d8a-4bf7-4ee6-a1d5-e9c3bcdf9a60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\FeatureGeneration\Desert">
+      <UniqueIdentifier>{20fb87be-301d-4ec8-b9a9-c973c51d8324}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\FeatureGeneration\Desert\DuneBarchan">
+      <UniqueIdentifier>{8bf30ec3-aa64-417d-b168-99a5355d6fc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\FeatureGeneration\Desert\DuneLongitudinal">
+      <UniqueIdentifier>{e84751e9-6545-479b-9db9-54ddee6e1b2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\FeatureGeneration\Desert\DuneStar">
+      <UniqueIdentifier>{eb7305c5-73a7-4849-b223-41165b843bac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\FeatureGeneration\Desert\DuneNabkha">
+      <UniqueIdentifier>{7c7b0d14-1567-4f95-9a62-dc7469526858}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\FeatureGeneration\Desert\DuneSand">
+      <UniqueIdentifier>{e02f457b-5728-4137-b66d-c3baca95433e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\FeatureGeneration\Fault">
+      <UniqueIdentifier>{94b09340-5953-4965-9845-ba25d18749c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\FeatureGeneration\Flatland">
+      <UniqueIdentifier>{c63d6367-d8b4-4feb-9d35-65697d394f85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\FeatureGeneration\Precipice">
+      <UniqueIdentifier>{39aaab6d-50c6-45aa-bc01-bb783a79e728}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\FeatureGeneration\Ridge">
+      <UniqueIdentifier>{93393832-30ff-4b41-a3a0-00fc243a46c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\FeatureGeneration\Seabed">
+      <UniqueIdentifier>{a2362083-77cb-427e-8711-8ed1dbe89b79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Generation\Stages\FeatureGeneration\Slope">
+      <UniqueIdentifier>{77650179-32e3-4e50-9af0-8c41e083787d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\StageTools\FeatureGeneration">
+      <UniqueIdentifier>{f1ac8f27-530d-4504-87c5-e9dca9887ee7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\StageTools\TerrainClassification">
+      <UniqueIdentifier>{d3abec5a-7714-4c98-90ed-6fabb24a68f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\StageTools\FeaturePlacement">
+      <UniqueIdentifier>{f4d83c0b-8b13-47d5-b618-cf62b93ffaf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\StageTools\Layout\Nodes">
+      <UniqueIdentifier>{8e32f491-82ac-426a-b42d-62eed1e9e16a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\StageTools\Landmasses\Nodes">
+      <UniqueIdentifier>{6a8593f7-4d3c-4817-800c-83df80a1f65d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\StageTools\Ridges\Nodes">
+      <UniqueIdentifier>{974e1602-e6fa-4db6-9c5f-0ef09fc22fa1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\StageTools\ContourLines\Nodes">
+      <UniqueIdentifier>{90761b66-39ea-42d4-8734-a7175f1d22e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\StageTools\TerrainModel\Nodes">
+      <UniqueIdentifier>{75785499-62eb-45f0-8c38-9f5b99c71e9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\StageTools\Lithomap\Nodes">
+      <UniqueIdentifier>{e22e1b31-c871-45ca-8cd4-e883f6363674}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\StageTools\FeaturePlacement\Nodes">
+      <UniqueIdentifier>{6a8f6935-b7ad-418b-8e36-2c022dcc1233}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="Resources\Omnigen.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Omnigen.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Shaders\Compute\SquareIntArray.hlsl">
+      <Filter>Resource Files\Shaders\Compute</Filter>
+    </None>
+    <None Include="Resources\Shaders\Compute\BaysRecognition.hlsl">
+      <Filter>Resource Files\Shaders\Compute</Filter>
+    </None>
+    <None Include="Resources\Shaders\Compute\ClusterSmoothing.hlsl">
+      <Filter>Resource Files\Shaders\Compute</Filter>
+    </None>
+    <None Include="Resources\Shaders\Terrain\TerrainMaterial.frag">
+      <Filter>Resource Files\Shaders\Terrain</Filter>
+    </None>
+    <None Include="Resources\Shaders\Terrain\TerrainMaterial.vert">
+      <Filter>Resource Files\Shaders\Terrain</Filter>
+    </None>
+    <None Include="Resources\Map.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Shaders\Urban\RoadMaterial.vert">
+      <Filter>Resource Files\Shaders\Urban</Filter>
+    </None>
+    <None Include="Resources\Shaders\Urban\RoadMaterial.frag">
+      <Filter>Resource Files\Shaders\Urban</Filter>
+    </None>
+    <None Include="Scripts\test.py">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Resources\Shaders\Urban\UrbanMesh.vert">
+      <Filter>Resource Files\Shaders\Urban</Filter>
+    </None>
+    <None Include="Resources\Shaders\Urban\UrbanMesh.frag">
+      <Filter>Resource Files\Shaders\Urban</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources\Omnigen.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="Source\Editor\Framework\Style\FramelessWindow\FramelessDialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Source\Editor\Framework\Style\FramelessWindow\FramelessWindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Source\Editor\StageTools\Layout\OmniSatScan\OmniSatScan.ui">
+      <Filter>Source Files\Editor\StageTools\Layout\OmniSatScan</Filter>
+    </QtUic>
+    <QtUic Include="Source\Editor\Dialogs\Preferences\OmnigenPreferencesDialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Source\Editor\Dialogs\AssetCompiler\AssetCompilerDialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CodeSandbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Omnigen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\OmnigenDrawable.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\OmnigenGeneration.cpp">
+      <Filter>Source Files\Scene\Generation</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Common\Markers\LineMarker.cpp">
+      <Filter>Source Files\Scene\Generation\Common\Markers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Common\Markers\MarkerDrawable.cpp">
+      <Filter>Source Files\Scene\Generation\Common\Markers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Common\Markers\PointCloudMarker.cpp">
+      <Filter>Source Files\Scene\Generation\Common\Markers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Common\Markers\PolygonMarker.cpp">
+      <Filter>Source Files\Scene\Generation\Common\Markers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\OmnigenGenerationData.cpp">
+      <Filter>Source Files\Scene\Generation</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\CoreUtils.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\FbxHelpers.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\PlatformMisc.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\Interpolation.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\OmnigenDirectCompute.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\Polygon.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\SquigCurve.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\Clipper\clipper.cpp">
+      <Filter>Source Files\Utils\Clipper</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\Voronoi\Voronoi.cpp">
+      <Filter>Source Files\Utils\Voronoi</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\Voronoi\VoronoiCore.cpp">
+      <Filter>Source Files\Utils\Voronoi</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\Triangulation\delabella.cpp">
+      <Filter>Source Files\Utils\Triangulation</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\Triangulation\Triangulation.cpp">
+      <Filter>Source Files\Utils\Triangulation</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\OmnigenProgressDialog.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\ManipulationGizmo.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\Widgets\Spoiler.cpp">
+      <Filter>Source Files\Utils\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\Widgets\FlowLayout.cpp">
+      <Filter>Source Files\Utils\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Framework\AdvancedDockingSystem\API.cpp">
+      <Filter>Source Files\Editor\Framework\AdvancedDockingSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Framework\AdvancedDockingSystem\ContainerWidget.cpp">
+      <Filter>Source Files\Editor\Framework\AdvancedDockingSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Framework\AdvancedDockingSystem\DropOverlay.cpp">
+      <Filter>Source Files\Editor\Framework\AdvancedDockingSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Framework\AdvancedDockingSystem\FloatingWidget.cpp">
+      <Filter>Source Files\Editor\Framework\AdvancedDockingSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Framework\AdvancedDockingSystem\Internal.cpp">
+      <Filter>Source Files\Editor\Framework\AdvancedDockingSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Framework\AdvancedDockingSystem\SectionContent.cpp">
+      <Filter>Source Files\Editor\Framework\AdvancedDockingSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Framework\AdvancedDockingSystem\SectionContentWidget.cpp">
+      <Filter>Source Files\Editor\Framework\AdvancedDockingSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Framework\AdvancedDockingSystem\SectionTitleWidget.cpp">
+      <Filter>Source Files\Editor\Framework\AdvancedDockingSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Framework\AdvancedDockingSystem\SectionWidget.cpp">
+      <Filter>Source Files\Editor\Framework\AdvancedDockingSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Framework\AdvancedDockingSystem\Serialization.cpp">
+      <Filter>Source Files\Editor\Framework\AdvancedDockingSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Framework\Style\DarkStyle.cpp">
+      <Filter>Source Files\Editor\Framework\Style</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Framework\Style\OmniStyle.cpp">
+      <Filter>Source Files\Editor\Framework\Style</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Framework\Style\FramelessWindow\FramelessWindow.cpp">
+      <Filter>Source Files\Editor\Framework\Style\FramelessWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Framework\Style\FramelessWindow\FramelessWindowTitleBar.cpp">
+      <Filter>Source Files\Editor\Framework\Style\FramelessWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Sections\AssetMgr\AssetMgrSection.cpp">
+      <Filter>Source Files\Editor\Sections\AssetMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Sections\CameraSystem\OmnigenCameraSection.cpp">
+      <Filter>Source Files\Editor\Sections\CameraSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Sections\History\History.cpp">
+      <Filter>Source Files\Editor\Sections\History</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Sections\History\OmnigenHistoryStackSection.cpp">
+      <Filter>Source Files\Editor\Sections\History</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Sections\OmniLog\OmniLogger.cpp">
+      <Filter>Source Files\Editor\Sections\OmniLog</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Sections\OmniLog\OmnigenLogView\OmnigenLogMessageItemModel.cpp">
+      <Filter>Source Files\Editor\Sections\OmniLog\OmnigenLogView</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Sections\OmniLog\OmnigenLogView\OmnigenLogSection.cpp">
+      <Filter>Source Files\Editor\Sections\OmniLog\OmnigenLogView</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Sections\Outline\OmnigenOutlineSection.cpp">
+      <Filter>Source Files\Editor\Sections\Outline</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Sections\Outline\OutlineTree.cpp">
+      <Filter>Source Files\Editor\Sections\Outline</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Sections\Profiler\OmnigenProfiler.cpp">
+      <Filter>Source Files\Editor\Sections\Profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Sections\Profiler\OmnigenProfilerSection.cpp">
+      <Filter>Source Files\Editor\Sections\Profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Sections\PropertySystem\OmnigenPropertiesSection.cpp">
+      <Filter>Source Files\Editor\Sections\PropertySystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Sections\PropertySystem\OmnigenPropertyList.cpp">
+      <Filter>Source Files\Editor\Sections\PropertySystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Sections\PropertySystem\Fields\ComboBoxField.cpp">
+      <Filter>Source Files\Editor\Sections\PropertySystem\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Sections\PropertySystem\Fields\OmnigenFieldBase.cpp">
+      <Filter>Source Files\Editor\Sections\PropertySystem\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Sections\Viewport\OmnigenCameraManager.cpp">
+      <Filter>Source Files\Editor\Sections\Viewport</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Sections\Viewport\OmnigenViewport.cpp">
+      <Filter>Source Files\Editor\Sections\Viewport</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\ContourLines\StageToolsContourLines.cpp">
+      <Filter>Source Files\Editor\StageTools\ContourLines</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\Landmasses\StageToolsLandmasses.cpp">
+      <Filter>Source Files\Editor\StageTools\Landmasses</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\Layout\LayoutSelection.cpp">
+      <Filter>Source Files\Editor\StageTools\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\Layout\LayoutWidgets.cpp">
+      <Filter>Source Files\Editor\StageTools\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\Layout\StageToolsLayout.cpp">
+      <Filter>Source Files\Editor\StageTools\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\Layout\OmniSatScan\OmniSatScan.cpp">
+      <Filter>Source Files\Editor\StageTools\Layout\OmniSatScan</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\Lithomap\StageToolsLithomap.cpp">
+      <Filter>Source Files\Editor\StageTools\Lithomap</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\ModAssignment\StageToolsModAssignment.cpp">
+      <Filter>Source Files\Editor\StageTools\ModAssignment</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\Ridges\RidgesSelection.cpp">
+      <Filter>Source Files\Editor\StageTools\Ridges</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\Ridges\RidgesWidgets.cpp">
+      <Filter>Source Files\Editor\StageTools\Ridges</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\Ridges\StageToolsRidges.cpp">
+      <Filter>Source Files\Editor\StageTools\Ridges</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\TerrainFinalization\StageToolsTerrainFinalization.cpp">
+      <Filter>Source Files\Editor\StageTools\TerrainFinalization</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\TerrainModel\StageToolsTerrainModel.cpp">
+      <Filter>Source Files\Editor\StageTools\TerrainModel</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\UrbanLayout\StageToolsUrbanLayout.cpp">
+      <Filter>Source Files\Editor\StageTools\UrbanLayout</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\UrbanLayout\UrbanLayoutSelection.cpp">
+      <Filter>Source Files\Editor\StageTools\UrbanLayout</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\UrbanLayout\UrbanSelection.cpp">
+      <Filter>Source Files\Editor\StageTools\UrbanLayout</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\UrbanSites\StageToolsUrbanSites.cpp">
+      <Filter>Source Files\Editor\StageTools\UrbanSites</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\ManipulationGizmoSelection.cpp">
+      <Filter>Source Files\Editor\StageTools</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\SelectionMgrBase.cpp">
+      <Filter>Source Files\Editor\StageTools</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\StageToolsBase.cpp">
+      <Filter>Source Files\Editor\StageTools</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Core\EditorGridDrawable.cpp">
+      <Filter>Source Files\Scene\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Core\SkyboxDrawable.cpp">
+      <Filter>Source Files\Scene\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\HandleDrawable.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\TerrainMods\River\TerrainModRiver.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainMods\River</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\TerrainMods\TerrainModBase.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainMods</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\TerrainModel\DigitalElevationModel.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainModel</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\Ridges\RidgeMarker.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\Ridges</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanLayout\UrbanPlanner.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanLayout</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanLayout\UrbanSuggestion.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanLayout</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\TerrainFinalization\TerrainChunkDrawable.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainFinalization</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\Lithomap\LithoCluster.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\Lithomap</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\ContourLines\ContourLines.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\ContourLines</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\Landmasses\LandmassBoundMarker.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\Landmasses</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\Landmasses\ShorelineMarker.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\Landmasses</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\Layout\DomainDrawable.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\Layout\DomainHandleDrawable.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\Layout\DomainPaintingPreview.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\Layout\Data\DomainDataBase.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\Layout\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\Layout\Data\DomainFieldUtils.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\Layout\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\Layout\Data\Biome\DomainData_Biome.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\Layout\Data\Biome</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\Layout\Data\Water\DomainData_Water.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\Layout\Data\Water</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\Layout\Data\Terrain\DomainData_Terrain.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\Layout\Data\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\Layout\Data\Terrain\Landform.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\Layout\Data\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Dialogs\Preferences\OmnigenPreferences.cpp">
+      <Filter>Source Files\Editor\Dialogs\Preferences</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Dialogs\Preferences\OmnigenPreferencesDialog.cpp">
+      <Filter>Source Files\Editor\Dialogs\Preferences</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\OmniStageBar\OmniStageBar.cpp">
+      <Filter>Source Files\Editor\OmniStageBar</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanLayout\UrbanHandleDrawable.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanLayout</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanLayout\UrbanUtils.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanLayout</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\Landmasses\StageGeneration_Landmasses.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\Landmasses</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\Lithomap\StageGeneration_Lithomap.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\Lithomap</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\TerrainMods\StageGeneration_TerrainMods.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainMods</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\TerrainFinalization\StageGeneration_TerrainFinalization.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainFinalization</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\Layout\StageGeneration_Layout.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\Ridges\StageGeneration_Ridges.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\Ridges</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\ContourLines\StageGeneration_ContourLines.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\ContourLines</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\TerrainModel\StageGeneration_TerrainModel.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainModel</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanLayout\StageGeneration_UrbanLayout.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanLayout</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanSites\StageGeneration_UrbanSites.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanSites</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanSites\UrbanGen\Core\District.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanSites\UrbanGen\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanSites\UrbanGen\Core\DistrictNetwork.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanSites\UrbanGen\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Dialogs\AssetCompiler\AssetCompilerDialog.cpp">
+      <Filter>Source Files\Editor\Dialogs\AssetCompiler</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Common\Markers\NurbsMarker.cpp">
+      <Filter>Source Files\Scene\Generation\Common\Markers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\Layout\DomainSquareDrawable.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\TerrainModel\TerrainModelWidgets.cpp">
+      <Filter>Source Files\Editor\StageTools\TerrainModel</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Common\Objects\UrbanMeshDrawable.cpp">
+      <Filter>Source Files\Scene\Generation\Common\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\Layout\OmniSatScan\SatScanAnalysis.cpp">
+      <Filter>Source Files\Editor\StageTools\Layout\OmniSatScan</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\Layout\OmniSatScan\SatScanLandforms.cpp">
+      <Filter>Source Files\Editor\StageTools\Layout\OmniSatScan</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\UrbanLayout\UrbanLayoutWidgets.cpp">
+      <Filter>Source Files\Editor\StageTools\UrbanLayout</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Sections\CameraSystem\TestPlayer.cpp">
+      <Filter>Source Files\Editor\Sections\CameraSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\TerrainFinalization\TerrainFinalizationSelection.cpp">
+      <Filter>Source Files\Editor\StageTools\TerrainFinalization</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\Ridges\MountainData.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\Ridges</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\Foliage\StageGeneration_Foliage.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\Foliage</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\Foliage\StageToolsFoliage.cpp">
+      <Filter>Source Files\Editor\StageTools\Foliage</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\Foliage\PlantDrawable.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\Foliage</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Sections\Viewport\OmnigenViewportSection.cpp">
+      <Filter>Source Files\Editor\Sections\Viewport</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Data\Assets\AssetBase.cpp">
+      <Filter>Source Files\Data\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Data\Assets\Texture\AssetTexture.cpp">
+      <Filter>Source Files\Data\Assets\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Data\Assets\Common\Mesh.cpp">
+      <Filter>Source Files\Data\Assets\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Data\Assets\Common\MeshAtlas.cpp">
+      <Filter>Source Files\Data\Assets\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Data\Assets\Plant\AssetPlant.cpp">
+      <Filter>Source Files\Data\Assets\Plant</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Data\Assets\Structure\AssetStructure.cpp">
+      <Filter>Source Files\Data\Assets\Structure</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\poly2tri\sweep\advancing_front.cc">
+      <Filter>Source Files\Utils\poly2tri</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\poly2tri\sweep\cdt.cc">
+      <Filter>Source Files\Utils\poly2tri</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\poly2tri\common\shapes.cc">
+      <Filter>Source Files\Utils\poly2tri</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\poly2tri\sweep\sweep.cc">
+      <Filter>Source Files\Utils\poly2tri</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\poly2tri\sweep\sweep_context.cc">
+      <Filter>Source Files\Utils\poly2tri</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\Geom3DUtils.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\TerrainMods\River\RiverNurbsMarker.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainMods\River</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\Colors.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\TerrainMods\River\TerrainModRiverData.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainMods\River</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\TerrainMods\River\RiverMarker.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainMods\River</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\TerrainMods\River\RiverSurfaceMarker.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainMods\River</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanSites\Buildings\Building.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanSites\Buildings</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanSites\Buildings\BuildingGenerator.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanSites\Buildings</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Dialogs\AssetCompiler\MultiAssetCompiler.cpp">
+      <Filter>Source Files\Editor\Dialogs\AssetCompiler</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Data\Assets\RockMaterial\AssetRockMaterial.cpp">
+      <Filter>Source Files\Data\Assets\RockMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Data\Assets\SoilMaterial\AssetSoilMaterial.cpp">
+      <Filter>Source Files\Data\Assets\SoilMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Data\Assets\Common\Texture.cpp">
+      <Filter>Source Files\Data\Assets\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Dialogs\CoverAssetRockPicker.cpp">
+      <Filter>Source Files\Editor\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\TerrainMods\Lake\TerrainModLake.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainMods\Lake</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\TerrainMods\Lake\LakeSurfaceMarker.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainMods\Lake</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\Landmasses\SeamassMarker.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\Landmasses</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\Landmasses\LandmassMarker.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\Landmasses</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\Landmasses\ShorelineUtils.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\Landmasses</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Common\Objects\Heightfield.cpp">
+      <Filter>Source Files\Scene\Generation\Common\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\Landmasses\LandmassSelection.cpp">
+      <Filter>Source Files\Editor\StageTools\Landmasses</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\Landmasses\LandmassWidgets.cpp">
+      <Filter>Source Files\Editor\StageTools\Landmasses</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanSites\UrbanGen\UrbanSite.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanSites\UrbanGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanSites\UrbanGen\Roads\RoadMarker.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanSites\UrbanGen\Roads</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanSites\UrbanGen\Roads\UrbanTopologyGenerator.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanSites\UrbanGen\Roads</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanSites\RuralGen\RoadGenerator.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanSites\RuralGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanSites\RuralGen\RoadTerrainSearch.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanSites\RuralGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanSites\RuralGen\RuralRoadGenerator.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanSites\RuralGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\ContourLines\IsohypseData.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\ContourLines</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\TerrainMods\Desert\TerrainModSand.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainMods\Sand</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\OmniBin\OmniBinQt.cpp">
+      <Filter>Source Files\Utils\OmniBin</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanSites\UrbanGen\Roads\RoadNetworkData.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanSites\UrbanGen\Roads</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\ModAssignment\River\ModToolsRiver.cpp">
+      <Filter>Source Files\Editor\StageTools\ModAssignment\River</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\Lithomap\LithomapToolsWidgets.cpp">
+      <Filter>Source Files\Editor\StageTools\Lithomap</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\Common\DrawUtils.cpp">
+      <Filter>Source Files\Editor\StageTools\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\ModAssignment\Lake\ModToolsLake.cpp">
+      <Filter>Source Files\Editor\StageTools\ModAssignment\Lake</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\TerrainClassification\StageGeneration_TerrainClassification.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainClassification</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\StageGeneration_FeatureGeneration.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\TerrainBlockBase.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\TerrainBlockData.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\TerrainBlockUtils.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\Beach\TerrainBlockBeach.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\Beach</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\Cliff\TerrainBlockCliff.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\Cliff</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\Desert\DuneGraph.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\Desert</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\Desert\TerrainBlockDesert.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\Desert</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\Desert\DuneBarchan\DuneBarchan.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\Desert\DuneBarchan</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\Desert\DuneLongitudinal\DuneLongitudinal.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\Desert\DuneLongitudinal</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\Desert\DuneNabkha\DuneNabkha.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\Desert\DuneNabkha</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\Desert\DuneSand\DuneSand.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\Desert\DuneSand</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\Desert\DuneStar\DuneStar.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\Desert\DuneStar</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\Fault\TerrainBlockFault.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\Fault</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\Flatland\TerrainBlockFlatland.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\Flatland</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\Precipice\TerrainBlockPrecipice.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\Precipice</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\Ridge\TerrainBlockRidge.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\Ridge</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\Seabed\TerrainBlockSeabed.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\Seabed</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\Slope\TerrainBlockSlope.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\Slope</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\FeatureGeneration\SmoothSlope\SmoothSlope.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\SmoothSlope</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\TerrainClassification\StageToolsTerrainClassification.cpp">
+      <Filter>Source Files\Editor\StageTools\TerrainClassification</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\TerrainClassification\TerrainClassificationWidgets.cpp">
+      <Filter>Source Files\Editor\StageTools\TerrainClassification</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\FeatureGeneration\StageToolsFeatureGeneration.cpp">
+      <Filter>Source Files\Editor\StageTools\FeatureGeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\FeaturePlacement\StageGeneration_FeaturePlacement.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\FeaturePlacement</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\FeaturePlacement\StageToolsFeaturePlacement.cpp">
+      <Filter>Source Files\Editor\StageTools\FeaturePlacement</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\FeaturePlacement\FeaturePlacementWidgets.cpp">
+      <Filter>Source Files\Editor\StageTools\FeaturePlacement</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\TriangleAdjacencyUtils.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanSites\UrbanGen\Roads\RoadVertexSearch.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanSites\UrbanGen\Roads</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\ContourLines\IHSelection.cpp">
+      <Filter>Source Files\Editor\StageTools\ContourLines</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\FeaturePlacement\FeaturePlacementSelection.cpp">
+      <Filter>Source Files\Editor\StageTools\FeaturePlacement</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\Layout\Nodes\BiomeDomainNode.cpp">
+      <Filter>Source Files\Editor\StageTools\Layout\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\Layout\Nodes\TerrainDomainNode.cpp">
+      <Filter>Source Files\Editor\StageTools\Layout\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\Layout\Nodes\WaterDomainNode.cpp">
+      <Filter>Source Files\Editor\StageTools\Layout\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\Landmasses\Nodes\LandmassNode.cpp">
+      <Filter>Source Files\Editor\StageTools\Landmasses\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\Landmasses\Nodes\ShorelineNode.cpp">
+      <Filter>Source Files\Editor\StageTools\Landmasses\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Common\Markers\MultiLineColoredMarker.cpp">
+      <Filter>Source Files\Scene\Generation\Common\Markers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\Dialogs\StageProgressConfirmation.cpp">
+      <Filter>Source Files\Editor\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\ContourLines\IsohypseBatchingMarker.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\ContourLines</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\ContourLines\IHSrcInfo.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\ContourLines</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Common\Markers\BatchingLineMarker.cpp">
+      <Filter>Source Files\Scene\Generation\Common\Markers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Common\Markers\BatchingCellMarker.cpp">
+      <Filter>Source Files\Scene\Generation\Common\Markers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\Lithomap\LithomapSelection.cpp">
+      <Filter>Source Files\Editor\StageTools\Lithomap</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Generation\Stages\UrbanSites\UrbanGen\Roads\RoadFixedTracer.cpp">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanSites\UrbanGen\Roads</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\Ridges\Nodes\RidgeNode.cpp">
+      <Filter>Source Files\Editor\StageTools\Ridges\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\ShaderPipeline.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\BoundingBox.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\Foliage\FoliageSelection.cpp">
+      <Filter>Source Files\Editor\StageTools\Foliage</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\Layout\Nodes\DomainSquareNode.cpp">
+      <Filter>Source Files\Editor\StageTools\Layout\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\ContourLines\Nodes\IsohypseNode.cpp">
+      <Filter>Source Files\Editor\StageTools\ContourLines\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\ModAssignment\River\ModRiverWidget.cpp">
+      <Filter>Source Files\Editor\StageTools\ModAssignment\River</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\ContourLines\ContourLinesWidgets.cpp">
+      <Filter>Source Files\Editor\StageTools\ContourLines</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\TerrainModel\Nodes\DEMPointNode.cpp">
+      <Filter>Source Files\Editor\StageTools\TerrainModel\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\Lithomap\Nodes\CellNode.cpp">
+      <Filter>Source Files\Editor\StageTools\Lithomap\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\FeaturePlacement\Nodes\ClusterNode.cpp">
+      <Filter>Source Files\Editor\StageTools\FeaturePlacement\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\StageTools\FeaturePlacement\Nodes\MetaClusterNode.cpp">
+      <Filter>Source Files\Editor\StageTools\FeaturePlacement\Nodes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CodeSandbox.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\OmnigenDrawable.h">
+      <Filter>Source Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\OmnigenGeneration.h">
+      <Filter>Source Files\Scene\Generation</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Common\Markers\LineMarker.h">
+      <Filter>Source Files\Scene\Generation\Common\Markers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Common\Markers\MarkerDrawable.h">
+      <Filter>Source Files\Scene\Generation\Common\Markers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Common\Markers\PointCloudMarker.h">
+      <Filter>Source Files\Scene\Generation\Common\Markers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Common\Markers\PolygonMarker.h">
+      <Filter>Source Files\Scene\Generation\Common\Markers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\OmnigenGenerationStage.h">
+      <Filter>Source Files\Scene\Generation</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Constants.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\ITree.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\CoreUtils.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\FbxHelpers.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\magic_enum.hpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\PlatformMisc.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\CircularVectorView.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\Graph.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\Interpolation.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\OmnigenDirectCompute.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\Polygon.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\QuadTree.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\QuadTreeLite.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\SquigCurve.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\Clipper\clipper.hpp">
+      <Filter>Source Files\Utils\Clipper</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\Voronoi\jc_voronoi.h">
+      <Filter>Source Files\Utils\Voronoi</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\Voronoi\jc_voronoi_clip.h">
+      <Filter>Source Files\Utils\Voronoi</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\Voronoi\Voronoi.h">
+      <Filter>Source Files\Utils\Voronoi</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\Voronoi\VoronoiCore.h">
+      <Filter>Source Files\Utils\Voronoi</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\Triangulation\delabella.h">
+      <Filter>Source Files\Utils\Triangulation</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\Triangulation\Earcut.hpp">
+      <Filter>Source Files\Utils\Triangulation</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\Triangulation\Triangulation.h">
+      <Filter>Source Files\Utils\Triangulation</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\EnumAsConstexpr.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\GeometryData.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\Event.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\ManipulationGizmo.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\Widgets\FlowLayout.h">
+      <Filter>Source Files\Utils\Widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\Crawler\FileCrawler.h">
+      <Filter>Source Files\Utils\Crawler</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\Crawler\dirent.h">
+      <Filter>Source Files\Utils\Crawler</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\OmniBin\OmniBin.h">
+      <Filter>Source Files\Utils\OmniBin</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\Framework\AdvancedDockingSystem\API.h">
+      <Filter>Source Files\Editor\Framework\AdvancedDockingSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\Framework\AdvancedDockingSystem\Internal.h">
+      <Filter>Source Files\Editor\Framework\AdvancedDockingSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\Framework\AdvancedDockingSystem\SectionContent.h">
+      <Filter>Source Files\Editor\Framework\AdvancedDockingSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\Framework\AdvancedDockingSystem\Serialization.h">
+      <Filter>Source Files\Editor\Framework\AdvancedDockingSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\Sections\History\History.h">
+      <Filter>Source Files\Editor\Sections\History</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\Sections\OmniLog\OmniLogger.h">
+      <Filter>Source Files\Editor\Sections\OmniLog</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\Sections\Profiler\OmnigenProfiler.h">
+      <Filter>Source Files\Editor\Sections\Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\Sections\PropertySystem\OmnigenPropertyList.h">
+      <Filter>Source Files\Editor\Sections\PropertySystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\Sections\PropertySystem\Fields\OmnigenField.h">
+      <Filter>Source Files\Editor\Sections\PropertySystem\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\ContourLines\StageToolsContourLines.h">
+      <Filter>Source Files\Editor\StageTools\ContourLines</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\Landmasses\StageToolsLandmasses.h">
+      <Filter>Source Files\Editor\StageTools\Landmasses</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\Layout\LayoutSelection.h">
+      <Filter>Source Files\Editor\StageTools\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\Layout\LayoutWidgets.h">
+      <Filter>Source Files\Editor\StageTools\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\Layout\StageToolsLayout.h">
+      <Filter>Source Files\Editor\StageTools\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\Lithomap\StageToolsLithomap.h">
+      <Filter>Source Files\Editor\StageTools\Lithomap</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\ModAssignment\StageToolsModAssignment.h">
+      <Filter>Source Files\Editor\StageTools\ModAssignment</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\Ridges\RidgesSelection.h">
+      <Filter>Source Files\Editor\StageTools\Ridges</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\Ridges\RidgesWidgets.h">
+      <Filter>Source Files\Editor\StageTools\Ridges</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\Ridges\StageToolsRidges.h">
+      <Filter>Source Files\Editor\StageTools\Ridges</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\TerrainFinalization\StageToolsTerrainFinalization.h">
+      <Filter>Source Files\Editor\StageTools\TerrainFinalization</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\TerrainModel\StageToolsTerrainModel.h">
+      <Filter>Source Files\Editor\StageTools\TerrainModel</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\UrbanLayout\StageToolsUrbanLayout.h">
+      <Filter>Source Files\Editor\StageTools\UrbanLayout</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\UrbanLayout\UrbanLayoutSelection.h">
+      <Filter>Source Files\Editor\StageTools\UrbanLayout</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\UrbanLayout\UrbanSelection.h">
+      <Filter>Source Files\Editor\StageTools\UrbanLayout</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\UrbanSites\StageToolsUrbanSites.h">
+      <Filter>Source Files\Editor\StageTools\UrbanSites</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\ManipulationGizmoSelection.h">
+      <Filter>Source Files\Editor\StageTools</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\SelectionMgr.h">
+      <Filter>Source Files\Editor\StageTools</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\StageTools.h">
+      <Filter>Source Files\Editor\StageTools</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Core\EditorGridDrawable.h">
+      <Filter>Source Files\Scene\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Core\SkyboxDrawable.h">
+      <Filter>Source Files\Scene\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editable.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\HandleDrawable.h">
+      <Filter>Source Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainMods\River\TerrainModRiver.h">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainMods\River</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainMods\TerrainMod.h">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainMods</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainMods\TerrainModBase.h">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainMods</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainMods\TerrainModData.h">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainMods</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainModel\DigitalElevationModel.h">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainModel</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\Ridges\RidgeMarker.h">
+      <Filter>Source Files\Scene\Generation\Stages\Ridges</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanLayout\UrbanPlanner.h">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanLayout</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanLayout\UrbanSuggestion.h">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanLayout</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainFinalization\TerrainChunkDrawable.h">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainFinalization</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\Lithomap\LithoCluster.h">
+      <Filter>Source Files\Scene\Generation\Stages\Lithomap</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\ContourLines\ContourLines.h">
+      <Filter>Source Files\Scene\Generation\Stages\ContourLines</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\Landmasses\LandmassBoundMarker.h">
+      <Filter>Source Files\Scene\Generation\Stages\Landmasses</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\Landmasses\ShorelineMarker.h">
+      <Filter>Source Files\Scene\Generation\Stages\Landmasses</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\Layout\DomainDrawable.h">
+      <Filter>Source Files\Scene\Generation\Stages\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\Layout\DomainHandleDrawable.h">
+      <Filter>Source Files\Scene\Generation\Stages\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\Layout\DomainPaintingPreview.h">
+      <Filter>Source Files\Scene\Generation\Stages\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\Layout\Data\DomainData.h">
+      <Filter>Source Files\Scene\Generation\Stages\Layout\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\Layout\Data\DomainDataBase.h">
+      <Filter>Source Files\Scene\Generation\Stages\Layout\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\Layout\Data\DomainFieldUtils.h">
+      <Filter>Source Files\Scene\Generation\Stages\Layout\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\Layout\Data\Biome\DomainData_Biome.h">
+      <Filter>Source Files\Scene\Generation\Stages\Layout\Data\Biome</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\Layout\Data\Water\DomainData_Water.h">
+      <Filter>Source Files\Scene\Generation\Stages\Layout\Data\Water</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\Layout\Data\Terrain\DomainData_Terrain.h">
+      <Filter>Source Files\Scene\Generation\Stages\Layout\Data\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\Layout\Data\Terrain\Landform.h">
+      <Filter>Source Files\Scene\Generation\Stages\Layout\Data\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\Dialogs\Preferences\OmnigenPreferences.h">
+      <Filter>Source Files\Editor\Dialogs\Preferences</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanLayout\UrbanHandleDrawable.h">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanLayout</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanLayout\UrbanUtils.h">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanLayout</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\Landmasses\StageGeneration_Landmasses.h">
+      <Filter>Source Files\Scene\Generation\Stages\Landmasses</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\Lithomap\StageGeneration_Lithomap.h">
+      <Filter>Source Files\Scene\Generation\Stages\Lithomap</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainMods\StageGeneration_TerrainMods.h">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainMods</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainFinalization\StageGeneration_TerrainFinalization.h">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainFinalization</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\StageGenerationBase.h">
+      <Filter>Source Files\Scene\Generation\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\StageGeneration.h">
+      <Filter>Source Files\Scene\Generation\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\Layout\StageGeneration_Layout.h">
+      <Filter>Source Files\Scene\Generation\Stages\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\Ridges\StageGeneration_Ridges.h">
+      <Filter>Source Files\Scene\Generation\Stages\Ridges</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\ContourLines\StageGeneration_ContourLines.h">
+      <Filter>Source Files\Scene\Generation\Stages\ContourLines</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainModel\StageGeneration_TerrainModel.h">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainModel</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanLayout\StageGeneration_UrbanLayout.h">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanLayout</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanSites\StageGeneration_UrbanSites.h">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanSites</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanSites\UrbanGen\Core\DistrictNetwork.h">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanSites\UrbanGen\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanSites\UrbanGen\Core\District.h">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanSites\UrbanGen\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Common\Markers\NurbsMarker.h">
+      <Filter>Source Files\Scene\Generation\Common\Markers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\Layout\DomainSquareDrawable.h">
+      <Filter>Source Files\Scene\Generation\Stages\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\TerrainModel\TerrainModelWidgets.h">
+      <Filter>Source Files\Editor\StageTools\TerrainModel</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\SerializableNurbs.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainMods\River\TerrainModRiverData.h">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainMods\River</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Common\Objects\UrbanMeshDrawable.h">
+      <Filter>Source Files\Scene\Generation\Common\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\Layout\OmniSatScan\SatScanAnalysis.h">
+      <Filter>Source Files\Editor\StageTools\Layout\OmniSatScan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\Layout\OmniSatScan\SatScanLandforms.h">
+      <Filter>Source Files\Editor\StageTools\Layout\OmniSatScan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\UrbanLayout\UrbanLayoutWidgets.h">
+      <Filter>Source Files\Editor\StageTools\UrbanLayout</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\TerrainFinalization\TerrainFinalizationSelection.h">
+      <Filter>Source Files\Editor\StageTools\TerrainFinalization</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\Ridges\MountainData.h">
+      <Filter>Source Files\Scene\Generation\Stages\Ridges</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\Sections\CameraSystem\TestPlayer.h">
+      <Filter>Source Files\Editor\Sections\CameraSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Common\Markers\SharedMeshMarker.h">
+      <Filter>Source Files\Scene\Generation\Common\Markers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\Foliage\StageGeneration_Foliage.h">
+      <Filter>Source Files\Scene\Generation\Stages\Foliage</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\Foliage\StageToolsFoliage.h">
+      <Filter>Source Files\Editor\StageTools\Foliage</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\Foliage\PlantDrawable.h">
+      <Filter>Source Files\Scene\Generation\Stages\Foliage</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\Sections\Viewport\OmnigenViewportSection.h">
+      <Filter>Source Files\Editor\Sections\Viewport</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\UrbanLayout\UrbanHandleDrawable.h">
+      <Filter>Source Files\Editor\StageTools\UrbanLayout</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Data\Assets\Assets.h">
+      <Filter>Source Files\Data\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Data\Assets\Texture\AssetTexture.h">
+      <Filter>Source Files\Data\Assets\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Data\Assets\Common\Mesh.h">
+      <Filter>Source Files\Data\Assets\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Data\Assets\Common\MeshAtlas.h">
+      <Filter>Source Files\Data\Assets\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Data\Assets\Common\MeshData.h">
+      <Filter>Source Files\Data\Assets\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Data\Assets\Plant\AssetPlant.h">
+      <Filter>Source Files\Data\Assets\Plant</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Data\Assets\Structure\AssetStructure.h">
+      <Filter>Source Files\Data\Assets\Structure</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\poly2tri\sweep\advancing_front.h">
+      <Filter>Source Files\Utils\poly2tri</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\poly2tri\sweep\cdt.h">
+      <Filter>Source Files\Utils\poly2tri</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\poly2tri\poly2tri.h">
+      <Filter>Source Files\Utils\poly2tri</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\poly2tri\common\shapes.h">
+      <Filter>Source Files\Utils\poly2tri</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\poly2tri\sweep\sweep.h">
+      <Filter>Source Files\Utils\poly2tri</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\poly2tri\sweep\sweep_context.h">
+      <Filter>Source Files\Utils\poly2tri</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\poly2tri\common\utils.h">
+      <Filter>Source Files\Utils\poly2tri</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\Geom3DUtils.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainMods\River\RiverNurbsMarker.h">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainMods\River</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\Colors.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainMods\River\RiverMarker.h">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainMods\River</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainMods\River\RiverSurfaceMarker.h">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainMods\River</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanSites\Buildings\Building.h">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanSites\Buildings</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanSites\Buildings\BuildingGenerator.h">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanSites\Buildings</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\MarkerRecorder.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Data\Assets\RockMaterial\AssetRockMaterial.h">
+      <Filter>Source Files\Data\Assets\RockMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Data\Assets\SoilMaterial\AssetSoilMaterial.h">
+      <Filter>Source Files\Data\Assets\SoilMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Data\Assets\Common\Texture.h">
+      <Filter>Source Files\Data\Assets\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainMods\Lake\TerrainModLake.h">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainMods\Lake</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainMods\Lake\LakeSurfaceMarker.h">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainMods\Lake</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\Landmasses\SeamassMarker.h">
+      <Filter>Source Files\Scene\Generation\Stages\Landmasses</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\Landmasses\LandmassMarker.h">
+      <Filter>Source Files\Scene\Generation\Stages\Landmasses</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\Resumable.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\Landmasses\ShorelineUtils.h">
+      <Filter>Source Files\Scene\Generation\Stages\Landmasses</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\AStar.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\ConcaveHull.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\Sections\PropertySystem\Fields\ArrayMetaField.h">
+      <Filter>Source Files\Editor\Sections\PropertySystem\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\Sections\PropertySystem\Fields\CheckboxField.h">
+      <Filter>Source Files\Editor\Sections\PropertySystem\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\Sections\PropertySystem\Fields\LineEditField.h">
+      <Filter>Source Files\Editor\Sections\PropertySystem\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\Sections\PropertySystem\Fields\ComboBoxField.h">
+      <Filter>Source Files\Editor\Sections\PropertySystem\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\Sections\PropertySystem\Fields\RangeField.h">
+      <Filter>Source Files\Editor\Sections\PropertySystem\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\Sections\PropertySystem\Fields\ConstField.h">
+      <Filter>Source Files\Editor\Sections\PropertySystem\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\Sections\PropertySystem\Fields\TextureBrowserField.h">
+      <Filter>Source Files\Editor\Sections\PropertySystem\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanSites\UrbanGen\UrbanSite.h">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanSites\UrbanGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanSites\UrbanGen\Roads\RoadMarker.h">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanSites\UrbanGen\Roads</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanSites\UrbanGen\Roads\UrbanTopologyGenerator.h">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanSites\UrbanGen\Roads</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanSites\RuralGen\RuralRoadGenerator.h">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanSites\RuralGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanSites\RuralGen\RoadGenerator.h">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanSites\RuralGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanSites\RuralGen\RoadTerrainSearch.h">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanSites\RuralGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\AdjacencyGraph.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\ContourLines\IsohypseData.h">
+      <Filter>Source Files\Scene\Generation\Stages\ContourLines</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainMods\Desert\TerrainModSand.h">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainMods\Sand</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\Lithomap\LithomapToolsWidgets.h">
+      <Filter>Source Files\Editor\StageTools\Lithomap</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Data\Assets\AssetBase.h">
+      <Filter>Source Files\Data\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\OmniBin\OmniBinQt.h">
+      <Filter>Source Files\Utils\OmniBin</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanSites\UrbanGen\Roads\RoadNetworkData.h">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanSites\UrbanGen\Roads</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\ModAssignment\River\ModToolsRiver.h">
+      <Filter>Source Files\Editor\StageTools\ModAssignment\River</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\ModAssignment\ModTools.h">
+      <Filter>Source Files\Editor\StageTools\ModAssignment</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\Common\DrawUtils.h">
+      <Filter>Source Files\Editor\StageTools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainMods\Desert\SandSurfaceMarker.h">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainMods\Sand</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\Landmasses\LandmassWidgets.h">
+      <Filter>Source Files\Editor\StageTools\Landmasses</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\Landmasses\LandmassSelection.h">
+      <Filter>Source Files\Editor\StageTools\Landmasses</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\Sections\PropertySystem\Fields\SliderField.h">
+      <Filter>Source Files\Editor\Sections\PropertySystem\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\jwt\detail\meta.hpp">
+      <Filter>Source Files\Utils\jwt\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\jwt\impl\algorithm.ipp">
+      <Filter>Source Files\Utils\jwt\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\jwt\impl\error_codes.ipp">
+      <Filter>Source Files\Utils\jwt\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\jwt\impl\stack_alloc.ipp">
+      <Filter>Source Files\Utils\jwt\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\jwt\impl\jwt.ipp">
+      <Filter>Source Files\Utils\jwt\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\jwt\json\json.hpp">
+      <Filter>Source Files\Utils\jwt\json</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\jwt\algorithm.hpp">
+      <Filter>Source Files\Utils\jwt</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\jwt\assertions.hpp">
+      <Filter>Source Files\Utils\jwt</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\jwt\base64.hpp">
+      <Filter>Source Files\Utils\jwt</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\jwt\config.hpp">
+      <Filter>Source Files\Utils\jwt</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\jwt\error_codes.hpp">
+      <Filter>Source Files\Utils\jwt</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\jwt\exceptions.hpp">
+      <Filter>Source Files\Utils\jwt</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\jwt\jwt.hpp">
+      <Filter>Source Files\Utils\jwt</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\jwt\parameters.hpp">
+      <Filter>Source Files\Utils\jwt</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\jwt\short_string.hpp">
+      <Filter>Source Files\Utils\jwt</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\jwt\stack_alloc.hpp">
+      <Filter>Source Files\Utils\jwt</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\jwt\string_view.hpp">
+      <Filter>Source Files\Utils\jwt</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\ModAssignment\Lake\ModToolsLake.h">
+      <Filter>Source Files\Editor\StageTools\ModAssignment\Lake</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\TerrainClassification\StageGeneration_TerrainClassification.h">
+      <Filter>Source Files\Scene\Generation\Stages\TerrainClassification</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\StageGeneration_FeatureGeneration.h">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\TerrainBlock.h">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\TerrainBlockBase.h">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\TerrainBlockData.h">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\TerrainBlockUtils.h">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\Beach\TerrainBlockBeach.h">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\Beach</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\Cliff\TerrainBlockCliff.h">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\Cliff</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\Desert\DesertSubtypes.h">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\Desert</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\Desert\DuneGraph.h">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\Desert</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\Desert\TerrainBlockDesert.h">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\Desert</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\Desert\DuneBarchan\DuneBarchan.h">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\Desert\DuneBarchan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\Desert\DuneLongitudinal\DuneLongitudinal.h">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\Desert\DuneLongitudinal</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\Desert\DuneNabkha\DuneNabkha.h">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\Desert\DuneNabkha</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\Desert\DuneSand\DuneSand.h">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\Desert\DuneSand</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\Desert\DuneStar\DuneStar.h">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\Desert\DuneStar</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\Fault\TerrainBlockFault.h">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\Fault</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\Flatland\TerrainBlockFlatland.h">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\Flatland</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\Precipice\TerrainBlockPrecipice.h">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\Precipice</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\Ridge\TerrainBlockRidge.h">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\Ridge</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\Seabed\TerrainBlockSeabed.h">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\Seabed</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\Slope\TerrainBlockSlope.h">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\Slope</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\SmoothSlope\SmoothSlope.h">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration\SmoothSlope</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\TerrainClassification\StageToolsTerrainClassification.h">
+      <Filter>Source Files\Editor\StageTools\TerrainClassification</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\TerrainClassification\TerrainClassificationWidgets.h">
+      <Filter>Source Files\Editor\StageTools\TerrainClassification</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\FeatureGeneration\StageToolsFeatureGeneration.h">
+      <Filter>Source Files\Editor\StageTools\FeatureGeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\FeaturePlacement\StageGeneration_FeaturePlacement.h">
+      <Filter>Source Files\Scene\Generation\Stages\FeaturePlacement</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\FeaturePlacement\StageToolsFeaturePlacement.h">
+      <Filter>Source Files\Editor\StageTools\FeaturePlacement</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\FeaturePlacement\FeaturePlacementWidgets.h">
+      <Filter>Source Files\Editor\StageTools\FeaturePlacement</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\TriangleAdjacencyUtils.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanSites\UrbanGen\Roads\RoadVertexSearch.h">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanSites\UrbanGen\Roads</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\Poisson.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\ContourLines\IHSelection.h">
+      <Filter>Source Files\Editor\StageTools\ContourLines</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Common\Objects\Heightfield.h">
+      <Filter>Source Files\Scene\Generation\Common\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Common\Markers\MultiLineColoredMarker.h">
+      <Filter>Source Files\Scene\Generation\Common\Markers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\FeaturePlacement\FeaturePlacementSelection.h">
+      <Filter>Source Files\Editor\StageTools\FeaturePlacement</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\Layout\Nodes\BiomeDomainNode.h">
+      <Filter>Source Files\Editor\StageTools\Layout\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\Layout\Nodes\TerrainDomainNode.h">
+      <Filter>Source Files\Editor\StageTools\Layout\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\Layout\Nodes\WaterDomainNode.h">
+      <Filter>Source Files\Editor\StageTools\Layout\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\StageObjectNode.h">
+      <Filter>Source Files\Editor\StageTools</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\Landmasses\Nodes\LandmassNode.h">
+      <Filter>Source Files\Editor\StageTools\Landmasses\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\Landmasses\Nodes\ShorelineNode.h">
+      <Filter>Source Files\Editor\StageTools\Landmasses\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Common\Markers\BatchMarker.h">
+      <Filter>Source Files\Scene\Generation\Common\Markers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Common\Markers\LineMarkerData.h">
+      <Filter>Source Files\Scene\Generation\Common\Markers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\ContourLines\IsohypseBatchingMarker.h">
+      <Filter>Source Files\Scene\Generation\Stages\ContourLines</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\ContourLines\IHSrcInfo.h">
+      <Filter>Source Files\Scene\Generation\Stages\ContourLines</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Common\Markers\BatchingLineMarker.h">
+      <Filter>Source Files\Scene\Generation\Common\Markers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Common\Markers\BatchingCellMarker.h">
+      <Filter>Source Files\Scene\Generation\Common\Markers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\Lithomap\LithomapMarker.h">
+      <Filter>Source Files\Scene\Generation\Stages\Lithomap</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\TerrainClassification\BlockTypeMarker.h">
+      <Filter>Source Files\Editor\StageTools\TerrainClassification</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\Lithomap\LithomapSelection.h">
+      <Filter>Source Files\Editor\StageTools\Lithomap</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\FeaturePlacement\ClusterBorderMarker.h">
+      <Filter>Source Files\Editor\StageTools\FeaturePlacement</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\FeatureGeneration\ClusterMeshMarker.h">
+      <Filter>Source Files\Scene\Generation\Stages\FeatureGeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Common\Markers\BatchingMeshMarker.h">
+      <Filter>Source Files\Scene\Generation\Common\Markers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\Ridges\Nodes\RidgeNode.h">
+      <Filter>Source Files\Editor\StageTools\Ridges\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\ShaderPipeline.h">
+      <Filter>Source Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\BoundingBox.h">
+      <Filter>Source Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Generation\Stages\UrbanSites\UrbanGen\Roads\RoadFixedTracer.h">
+      <Filter>Source Files\Scene\Generation\Stages\UrbanSites\UrbanGen\Roads</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\Foliage\FoliageSelection.h">
+      <Filter>Source Files\Editor\StageTools\Foliage</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\Layout\Nodes\DomainSquareNode.h">
+      <Filter>Source Files\Editor\StageTools\Layout\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\ContourLines\Nodes\IsohypseNode.h">
+      <Filter>Source Files\Editor\StageTools\ContourLines\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\ModAssignment\River\ModRiverWidget.h">
+      <Filter>Source Files\Editor\StageTools\ModAssignment\River</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\ContourLines\ContourLinesWidgets.h">
+      <Filter>Source Files\Editor\StageTools\ContourLines</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\TerrainModel\Nodes\DEMPointNode.h">
+      <Filter>Source Files\Editor\StageTools\TerrainModel\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\Lithomap\Nodes\CellNode.h">
+      <Filter>Source Files\Editor\StageTools\Lithomap\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\FeaturePlacement\Nodes\ClusterNode.h">
+      <Filter>Source Files\Editor\StageTools\FeaturePlacement\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\StageTools\FeaturePlacement\Nodes\MetaClusterNode.h">
+      <Filter>Source Files\Editor\StageTools\FeaturePlacement\Nodes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="Source\Omnigen.h">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Scene\Generation\OmnigenGenerationData.h">
+      <Filter>Source Files\Scene\Generation</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Utils\OmnigenProgressDialog.h">
+      <Filter>Source Files\Utils</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Utils\Widgets\Spoiler.h">
+      <Filter>Source Files\Utils\Widgets</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\Framework\AdvancedDockingSystem\ContainerWidget.h">
+      <Filter>Source Files\Editor\Framework\AdvancedDockingSystem</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\Framework\AdvancedDockingSystem\DropOverlay.h">
+      <Filter>Source Files\Editor\Framework\AdvancedDockingSystem</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\Framework\AdvancedDockingSystem\FloatingWidget.h">
+      <Filter>Source Files\Editor\Framework\AdvancedDockingSystem</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\Framework\AdvancedDockingSystem\SectionContentWidget.h">
+      <Filter>Source Files\Editor\Framework\AdvancedDockingSystem</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\Framework\AdvancedDockingSystem\SectionTitleWidget.h">
+      <Filter>Source Files\Editor\Framework\AdvancedDockingSystem</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\Framework\AdvancedDockingSystem\SectionWidget.h">
+      <Filter>Source Files\Editor\Framework\AdvancedDockingSystem</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\Framework\Style\DarkStyle.h">
+      <Filter>Source Files\Editor\Framework\Style</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\Framework\Style\FramelessWindow\FramelessWindow.h">
+      <Filter>Source Files\Editor\Framework\Style\FramelessWindow</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\Framework\Style\FramelessWindow\FramelessWindowTitleBar.h">
+      <Filter>Source Files\Editor\Framework\Style\FramelessWindow</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\Sections\AssetMgr\AssetMgrSection.h">
+      <Filter>Source Files\Editor\Sections\AssetMgr</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\Sections\CameraSystem\OmnigenCameraSection.h">
+      <Filter>Source Files\Editor\Sections\CameraSystem</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\Sections\History\OmnigenHistoryStackSection.h">
+      <Filter>Source Files\Editor\Sections\History</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\Sections\OmniLog\OmnigenLogView\OmnigenLogMessageItemModel.h">
+      <Filter>Source Files\Editor\Sections\OmniLog\OmnigenLogView</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\Sections\OmniLog\OmnigenLogView\OmnigenLogSection.h">
+      <Filter>Source Files\Editor\Sections\OmniLog\OmnigenLogView</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\Sections\Outline\OmnigenOutlineSection.h">
+      <Filter>Source Files\Editor\Sections\Outline</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\Sections\Outline\OutlineTree.h">
+      <Filter>Source Files\Editor\Sections\Outline</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\Sections\Profiler\OmnigenProfilerSection.h">
+      <Filter>Source Files\Editor\Sections\Profiler</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\Sections\PropertySystem\OmnigenPropertiesSection.h">
+      <Filter>Source Files\Editor\Sections\PropertySystem</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\Sections\PropertySystem\Fields\OmnigenFieldBase.h">
+      <Filter>Source Files\Editor\Sections\PropertySystem\Fields</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\Sections\Viewport\OmnigenCameraManager.h">
+      <Filter>Source Files\Editor\Sections\Viewport</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\StageTools\Layout\OmniSatScan\OmniSatScan.h">
+      <Filter>Source Files\Editor\StageTools\Layout\OmniSatScan</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\StageTools\StageToolsBase.h">
+      <Filter>Source Files\Editor\StageTools</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\Dialogs\Preferences\OmnigenPreferencesDialog.h">
+      <Filter>Source Files\Editor\Dialogs\Preferences</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\OmniStageBar\OmniStageBar.h">
+      <Filter>Source Files\Editor\OmniStageBar</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\StageTools\SelectionMgrBase.h">
+      <Filter>Source Files\Editor\StageTools</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\Framework\Style\OmniStyle.h">
+      <Filter>Source Files\Editor\Framework\Style</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\Sections\Viewport\OmnigenViewport.h">
+      <Filter>Source Files\Editor\Sections\Viewport</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\Dialogs\AssetCompiler\AssetCompilerDialog.h">
+      <Filter>Source Files\Editor\Dialogs\AssetCompiler</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Utils\Widgets\RangeSlider.h">
+      <Filter>Source Files\Utils\Widgets</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\Dialogs\AssetCompiler\MultiAssetCompiler.h">
+      <Filter>Source Files\Editor\Dialogs\AssetCompiler</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\Dialogs\CoverAssetRockPicker.h">
+      <Filter>Source Files\Editor\Dialogs</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\Sections\PropertySystem\Fields\FieldImplBase.h">
+      <Filter>Source Files\Editor\Sections\PropertySystem\Fields</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\StageTools\ModAssignment\ModToolsBase.h">
+      <Filter>Source Files\Editor\StageTools\ModAssignment</Filter>
+    </QtMoc>
+    <QtMoc Include="Source\Editor\Dialogs\StageProgressConfirmation.h">
+      <Filter>Source Files\Editor\Dialogs</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

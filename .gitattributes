@@ -1,0 +1,7 @@
+*.png filter=lfs diff=lfs merge=lfs -text
+*.cso filter=lfs diff=lfs merge=lfs -text
+*.oas filter=lfs diff=lfs merge=lfs -text
+*.meta filter=lfs diff=lfs merge=lfs -text
+*.OFU filter=lfs diff=lfs merge=lfs -text
+*.umap filter=lfs diff=lfs merge=lfs -text
+*.uasset filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,68 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+*.aps
+
+# Binaries
+Binaries/
+Integration/UE4/OmnigenSampleProject/Intermediate/*
+Integration/UE4/OmnigenSampleProject/Binaries/*
+Integration/UE4/OmnigenSampleProject/Plugins/UnrealOmnigen/Intermediate/*
+Integration/UE4/OmnigenSampleProject/Plugins/UnrealOmnigen/Binaries/*
+
+# Project files
+.vs/
+UE5/OmnigenProject/.vsConfig
+*generated.*
+
+# Output files
+Output/
+Output/logs
+*.fbx
+
+# Configs
+*.ini
+
+# Omnigen file format
+*.ogn
+Omnigen.pri
+Omnigen.pro
+
+# Visual Studio preferences
+*.user
+
+# LFS helpers
+lfs/
+UE5/OmnigenProject/ExampleExport.OFU
+*.OFU
+UE5/OmnigenProject/Content/
+*.OEF
